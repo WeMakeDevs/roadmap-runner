@@ -8,8 +8,11 @@ import {
   LeaderboardIcon,
   SignoutIcon,
 } from "../../assets/sidebar/";
+import { useLogout } from "../../hooks/useLogout";
 
 const Sidebar = () => {
+  const { logout, isPending } = useLogout();
+
   return (
     <div className="sidebar">
       <div className="link-wrapper">
@@ -37,7 +40,7 @@ const Sidebar = () => {
           <li>
             {/* <i className="fa-solid fa-user"></i> */}
             <img src={SignoutIcon} alt="" />
-            <button>Sign out</button>
+            <button onClick={logout}>Sign out</button>
           </li>
         </ul>
       </div>
