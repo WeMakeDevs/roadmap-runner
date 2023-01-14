@@ -12,7 +12,7 @@ const SubSection = ({ subsection }) => {
       )}
       <div>
         {subsection.resources.map((resource) => (
-          <Resource resource={resource} />
+          <Resource key={resource._id} resource={resource} />
         ))}
       </div>
     </div>

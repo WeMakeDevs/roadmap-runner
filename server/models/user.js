@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
       ],
     },
   ],
-  progressStat: Number,
+  progressStat: { type: Number, default: 0 },
   displayPicture: String,
 });
 

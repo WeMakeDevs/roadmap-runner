@@ -37,12 +37,10 @@ export const enrollRoadmap = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
     console.log(user.enrolledRoadmaps);
-    const roadmapsCount = await User
-    .find({
+    const roadmapsCount = await User.find({
       _id: req.user._id,
       enrolledRoadmaps: { $in: [id] },
-    })
-    .count();
+    }).count();
 
     if (roadmapsCount > 0) {
       return res
@@ -54,6 +52,48 @@ export const enrollRoadmap = async (req, res) => {
     await user.save();
 
     return res.status(200).json({ success: true, data: user.enrolledRoadmaps });
+  } catch (e) {
+    console.error(e);
+    return res
+      .status(500)
+      .json({ succes: false, message: "An internal server error occured" });
+  }
+};
+
+export const updateProgress = async (req, res) => {
+  const { roadmapId, resourceId } = req.body;
+
+  if (!resourceId || !roadmapId) {
+    return res
+      .status(400)
+      .json({ success: false, message: "resourceId & roadmapId are required" });
+  }
+
+  try {
+    const response = await User.updateOne(
+      { _id: req.user._id, "progress.roadmapId": roadmapId },
+      {
+        $push: { "progress.$.completedId": { id: resourceId } },
+        $inc: { progressStat: 1 },
+      }
+    );
+
+    if (response.modifiedCount === 0) {
+      const response = await User.updateOne(
+        { _id: req.user._id },
+        {
+          $push: {
+            progress: {
+              roadmapId,
+              completedId: [{ id: resourceId }],
+            },
+          },
+          $inc: { progressStat: 1 },
+        }
+      );
+    }
+
+    return res.status(200).json({ success: true });
   } catch (e) {
     console.error(e);
     return res

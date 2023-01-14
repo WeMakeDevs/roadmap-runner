@@ -1,11 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import api from "../../api";
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { useParams } from "react-router";
 
 const Resource = ({ resource, completed = false }) => {
+  const { user } = useAuthContext();
   const [checked, setChecked] = useState(completed);
+  const { id } = useParams();
 
-  function toggleCompleted() {
+  const toggleCompleted = async () => {
     setChecked((prev) => !prev);
-  }
+  };
+
+  useEffect(() => {
+    const postProgress = () => {
+      api.post(
+        "progress",
+        { resourceId: resource._id, roadmapId: id },
+        {
+          headers: { Authorization: user.accessToken },
+        }
+      );
+    };
+    if (checked) {
+      postProgress();
+    }
+  }, [checked, user, id, resource]);
 
   return (
     <div
@@ -14,10 +34,15 @@ const Resource = ({ resource, completed = false }) => {
       onClick={toggleCompleted}
     >
       <div>
-        <label class="checkbox-container tooltip">
-          <input type="checkbox" class="form-control" checked={checked} onChange={toggleCompleted} />
-          <span class="checkbox-custom"></span>
-          {!checked && <span class="tooltiptext">Mark as done</span>}
+        <label className="checkbox-container tooltip">
+          <input
+            type="checkbox"
+            className="form-control"
+            checked={checked}
+            onChange={toggleCompleted}
+          />
+          <span className="checkbox-custom"></span>
+          {!checked && <span className="tooltiptext">Mark as done</span>}
         </label>
         {resource.id} {resource.title}
       </div>
