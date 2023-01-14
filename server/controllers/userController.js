@@ -101,3 +101,31 @@ export const updateProgress = async (req, res) => {
       .json({ succes: false, message: "An internal server error occured" });
   }
 };
+
+export const getLeaderboard = async (req, res) => {
+  try {
+    const users = await User.find().sort({ progressStat: -1 }).limit(10);
+    const count = await User.estimatedDocumentCount();
+
+    return res.status(200).json({ success: true, users, count });
+  } catch (e) {
+    console.error(e);
+    return res
+      .status(500)
+      .json({ succes: false, message: "An internal server error occured" });
+  }
+};
+
+export const getHomeStats = async (req, res) => {
+  try {
+    const homeStats = await User.findById(req.user._id).select(
+      "enrolledRoadmaps progressStat"
+    );
+    return res.status(200).json({ success: true, homeStats });
+  } catch (e) {
+    console.error(e);
+    return res
+      .status(500)
+      .json({ succes: false, message: "An internal server error occured" });
+  }
+};

@@ -1,11 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SidebarLayout from "../../components/SidebarLayout";
 import ConsistencyGraph from "./ConsistencyGraph";
 import SmileyFace from "../../assets/mood/smileyface.svg";
 import "./index.css";
-import { LeaderboardIcon, MyRoadmapIcon, RoadmapIcon } from "../../assets/sidebar";
+import {
+  LeaderboardIcon,
+  MyRoadmapIcon,
+  RoadmapIcon,
+} from "../../assets/sidebar";
+import api from "../../api";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Home = () => {
+  const [stats, setStats] = useState({});
+  const { user } = useAuthContext();
+
+  useEffect(() => {
+    const fetchHomeStats = async () => {
+      const res = await api.get("homeStats", {
+        headers: { Authorization: user.accessToken },
+      });
+      setStats(res.data.homeStats);
+    };
+
+    fetchHomeStats();
+  }, [user]);
+
   return (
     <SidebarLayout>
       <div className="home-container">
@@ -15,12 +35,12 @@ const Home = () => {
             <section className="roadmaps-card card">
               <img src={RoadmapIcon} alt="" />
               <h2 className="title">Your Roadmaps</h2>
-              <p className="count">2</p>
+              <p className="count">{stats.enrolledRoadmaps.length}</p>
             </section>
             <section className="progress-card card">
-            <img src={LeaderboardIcon} alt="" />
-              <h2 className="title">Your Progress</h2>
-              <p className="count">10%</p>
+              <img src={LeaderboardIcon} alt="" />
+              <h2 className="title">Your Points</h2>
+              <p className="count">{stats.progressStat}</p>
             </section>
             <section className="progress-card card">
               <img src={MyRoadmapIcon} alt="" />
