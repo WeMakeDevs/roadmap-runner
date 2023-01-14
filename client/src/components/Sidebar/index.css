@@ -24,6 +24,9 @@
 
 .sidebar .link-wrapper li {
     margin: 2.5rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
 }
 
 .sidebar .link-wrapper i {
@@ -31,8 +34,16 @@
     margin-right: 1rem
 }
 
+.sidebar .link-wrapper img {
+    width: 1.5rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
 .sidebar button {
-    background: white;
-    border: 1px solid white;
     padding: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
 }
