@@ -34,3 +34,23 @@ export const getAllRoadmaps = async (req, res) => {
       .json({ success: false, message: "An internal server error occured" });
   }
 };
+
+export const getRoadmapByRoadmapId = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id) {
+    return res
+      .status(400)
+      .json({ success: false, message: "Roadmap id is required" });
+  }
+
+  try {
+    const roadmap = await Roadmap.findById(id);
+    return res.status(200).json({ success: true, roadmap });
+  } catch (e) {
+    console.error(e);
+    return res
+      .status(500)
+      .json({ success: false, message: "An internal server error occured" });
+  }
+};
