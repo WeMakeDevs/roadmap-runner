@@ -1,0 +1,16 @@
+.primary-nav {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    font-weight: bold;
+}
+
+.primary-nav > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.primary-nav img {
+    width: 2rem;
+}

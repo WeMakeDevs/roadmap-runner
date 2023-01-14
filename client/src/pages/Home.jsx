@@ -1,7 +1,12 @@
 import React from "react";
+import SidebarLayout from "../components/SidebarLayout";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <SidebarLayout>
+      <div>Home</div>
+    </SidebarLayout>
+  );
 };
 
 export default Home;

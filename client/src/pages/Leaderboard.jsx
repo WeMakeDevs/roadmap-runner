@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SidebarLayout from "../components/SidebarLayout";
 
 const Leaderboard = () => {
   return (
-    <div>Leaderboard</div>
-  )
-}
+    <SidebarLayout>
+      <div>Leaderboard</div>
+    </SidebarLayout>
+  );
+};
 
-export default Leaderboard
+export default Leaderboard;
