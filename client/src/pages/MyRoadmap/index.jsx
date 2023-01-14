@@ -27,7 +27,6 @@ const Roadmap = () => {
           <h1>
             {roadmap?.name} {id}
           </h1>
-          <button className="roadmap-enroll-btn">Enroll</button>
 
           <div className="roadmap">
             {roadmap &&
