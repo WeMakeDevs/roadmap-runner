@@ -5,7 +5,7 @@
 
 .sidebar-layout > div {
     width: 280px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid rgb(163, 168, 195, .2);
 }
 
 .sidebar-layout > main {
