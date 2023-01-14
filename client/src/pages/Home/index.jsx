@@ -4,13 +4,8 @@ import ConsistencyGraph from "./ConsistencyGraph";
 import SmileyFace from "../../assets/mood/smileyface.svg";
 import "./index.css";
 import { LeaderboardIcon, MyRoadmapIcon, RoadmapIcon } from "../../assets/sidebar";
-import Loader from "../../components/Loader";
 
 const Home = ({loading = true}) => {
-
-  if(loading) {
-    return <SidebarLayout><Loader /></SidebarLayout>
-  }
 
   return (
     <SidebarLayout>
