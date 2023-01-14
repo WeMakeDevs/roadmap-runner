@@ -30,17 +30,17 @@ const Home = () => {
     <SidebarLayout>
       <div className="home-container">
         <div>
-          <h1>Hello Siddhi 👋</h1>
+          <h1>Hello {user.displayName} 👋</h1>
           <div className="stats-card">
             <section className="roadmaps-card card">
               <img src={RoadmapIcon} alt="" />
               <h2 className="title">Your Roadmaps</h2>
-              <p className="count">{stats.enrolledRoadmaps.length}</p>
+              <p className="count">{stats?.enrolledRoadmaps?.length || 0}</p>
             </section>
             <section className="progress-card card">
               <img src={LeaderboardIcon} alt="" />
               <h2 className="title">Your Points</h2>
-              <p className="count">{stats.progressStat}</p>
+              <p className="count">{stats?.progressStat}</p>
             </section>
             <section className="progress-card card">
               <img src={MyRoadmapIcon} alt="" />
