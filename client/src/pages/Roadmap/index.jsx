@@ -22,14 +22,23 @@ const Roadmap = () => {
     fetchRoadmaps();
   }, [user, id]);
 
-  console.log(roadmap);
+  const handleEnroll = async () => {
+    const res = await api.post(
+      "enroll",
+      { id },
+      { headers: { Authorization: user.accessToken } }
+    );
+    console.log(res.data);
+  };
 
   return (
     <SidebarLayout>
       <div className="roadmap-container">
         <div>
           <h1>{roadmap?.name}</h1>
-          <button className="roadmap-enroll-btn">Enroll</button>
+          <button onClick={handleEnroll} className="roadmap-enroll-btn">
+            Enroll
+          </button>
 
           <div className="roadmap">
             {roadmap &&

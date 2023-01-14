@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
     default: Date.now,
   },
   enrolledRoadmaps: [
-    { roadmap: { type: mongoose.Schema.Types.ObjectId, ref: "Roadmap" } },
+    { roadmapId: { type: mongoose.Schema.Types.ObjectId, ref: "Roadmap" } },
   ],
   progress: [
     {
