@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import SidebarLayout from "../../components/SidebarLayout";
-// import roadmapData from "../../data/android.json";
-import roadmapData from "../../data/frontend.json";
+import roadmapData from "../../data/opensource.json";
+// import roadmapData from "../../data/frontend.json";
 import Section from "./Section";
 import "./index.css";
 
@@ -18,6 +18,8 @@ const Roadmap = () => {
 
     fetchRoadmaps();
   }, []);
+
+  console.log(roadmap)
 
   return (
     <SidebarLayout>
