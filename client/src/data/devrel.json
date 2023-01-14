@@ -1,0 +1,201 @@
+{
+  "name": "DevRel",
+  "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668096/roadmaps/devrel_zlrpzq.png",
+  "description": "This roadmap provides a comprehensive guide for anyone interested in pursuing a career in Developer Relations. It covers the essential topics such as what DevRel is, how to become a DevRel, public speaking, blogging, personal branding, community management and various programs and internships available in the field. The roadmap is designed to give learners the skills and knowledge they need to excel in the field of DevRel.",
+  "sections": [
+    {
+      "id": "1",
+      "title": "All about DevRel",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "1.1.1",
+              "title": "Why?",
+              "url": "https://youtu.be/l7-mCU9Gskg"
+            },
+            {
+              "id": "1.1.2",
+              "title": "Intro to DevRel",
+              "url": "https://youtu.be/lZvf5Tm4nSo"
+            },
+            {
+              "id": "1.1.3",
+              "title": "About DevRel",
+              "url": "https://devrel.co/about/"
+            },
+            {
+              "id": "1.1.4",
+              "title": "What Is Developer Advocacy? - Kunal Kushwaha(Youtube)",
+              "url": "https://youtu.be/MKztZJODyxY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "How to become DevRel",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "2.1.1",
+              "title": "The Roadmap to becoming a DevRel - Brad McCoy(Youtube)",
+              "url": "https://youtu.be/_SSCZkSitlc"
+            },
+            {
+              "id": "2.1.2",
+              "title": "How to become a DevRel? - Eddie Jaoude(Youtube)",
+              "url": "https://youtu.be/iUZerHctTB8"
+            },
+            {
+              "id": "2.1.3",
+              "title": "How to get hired in DevRel - DevRel(Youtube)",
+              "url": "https://youtu.be/VbM-Ii2HLoA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Public Speaking",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "3.1.1",
+              "title": "TED's secret to great public speaking | Chris Anderson",
+              "url": "https://youtu.be/-FOCpMAww28"
+            },
+            {
+              "id": "3.1.2",
+              "title": "Communication Best Practices - Giving and Receiving Feedback",
+              "url": "https://youtu.be/mTsMaxkQ42I"
+            },
+            {
+              "id": "3.1.3",
+              "title": "Learning in Public and Getting Opportunities",
+              "url": "https://youtu.be/d8AJEXmOBnI"
+            },
+            {
+              "id": "3.1.4",
+              "title": "Participate in community events (Twitter spaces, community hangouts, etc)",
+              "url": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Blogging",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "4.1.1",
+              "title": "How to write technical blog posts",
+              "url": "https://youtu.be/YODPgBadj80"
+            },
+            {
+              "id": "4.1.2",
+              "title": "How writing technical blogs can take you places",
+              "url": "https://youtu.be/wA2gI8T-ebQ"
+            },
+            {
+              "id": "4.1.3",
+              "title": "WeMakeDevs Hashnode Blogging Challenge",
+              "url": "https://github.com/WeMakeDevs/events/tree/main/hashnode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Personal Branding",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "5.1.1",
+              "title": "How to Build a Personal Brand for Your Tech Career",
+              "url": "https://careerfoundry.com/en/blog/career-change/personal-branding/"
+            },
+            {
+              "id": "5.1.2",
+              "title": "Helping you to build your Personal Brand in Tech",
+              "url": "https://dev.to/vinzvinci/helping-you-to-build-your-personal-brand-in-tech-35df"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Your Community",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "6.1.1",
+              "title": "How to get started with tech communities",
+              "url": "https://youtu.be/VkaO73B7vmE"
+            },
+            {
+              "id": "6.1.2",
+              "title": "Community Management as a Career",
+              "url": "https://youtu.be/bnEIt1MyhDY"
+            },
+            {
+              "id": "6.1.3",
+              "title": "How to get started with Tech Communities",
+              "url": "https://youtu.be/VYjWsDp1B6o"
+            },
+            {
+              "id": "6.1.4",
+              "title": "How I Joined My Favourite Communities",
+              "url": "https://youtu.be/x8kIZKUBYT0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Programs",
+      "subsections": [
+        {
+          "id": "7.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "7.1.1",
+              "title": "25+ Paid Open Source Programs and Internships - WeMakeDevs",
+              "url": "https://blog.wemakedevs.org/25-paid-open-source-programs-and-internships"
+            },
+            {
+              "id": "7.1.2",
+              "title": "25+ Paid Open Source Programs and Internships - Kunal Kushwaha(Youtube)",
+              "url": "https://youtu.be/x4hsV_q_YQc"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
