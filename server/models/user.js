@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
     required: [true, "Please provide a name"],
     maxlength: [40, "Name should be under 40 characters"],
   },
+  lastVisitedAt: Date,
   email: {
     type: String,
     required: [true, "Please provide an email"],
@@ -35,7 +36,7 @@ const userSchema = new mongoose.Schema({
     },
   ],
   progressStat: Number,
-  displayPicture: String
+  displayPicture: String,
 });
 
 export default mongoose.model("User", userSchema);
