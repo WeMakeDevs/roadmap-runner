@@ -1,6 +1,7 @@
 .landing {
     min-height: calc(90vh - 3.5rem);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -9,11 +10,19 @@
 .landing .wrapper {
     width: fit-content;
     text-align: center;
-    background-color: white;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.landing .wrapper .logo {
+    width: 5rem;
 }
 
 .landing h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
     /* font-family: var(--ff-mono); */
 }
@@ -22,6 +31,7 @@
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
     font-family: var(--ff-mono);
+    color: var(--clr-secondary);
 }
 
 .landing a {
@@ -52,9 +62,9 @@
     animation: vertical-shaking 5s infinite;
 }
 
-.landing .bg-logo.js {
-    bottom: 10%;
-    left: 10%;
+.landing .bg-logo.nodejs {
+    top: 28%;
+    right: 5%;
 }
 
 .landing .bg-logo.db {
@@ -68,9 +78,9 @@
     animation: vertical-shaking 3s infinite;
 }
 
-.landing .bg-logo.nodejs {
-    bottom: 10%;
-    right: 10%;
+.landing .bg-logo.mongodb {
+    top: 5%;
+    left: 28%;
     animation: horizontal-shaking 3s infinite;
 }
 
@@ -91,12 +101,12 @@
 
 .landing .bg-logo.git {
     top: 5%;
-    right: 40%;
+    right: 30%;
 }
 
-.landing .bg-logo.mongodb {
-    top: 20%;
-    left: 35%;
+.landing .bg-logo.js {
+    top: 25%;
+    left: 5%;
 }
 
 
