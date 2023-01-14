@@ -1,5 +1,7 @@
 {
   "name": "Android Development",
+  "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/android_n4zcjn.png",
+  "description": "This roadmap is designed to take you from a beginner in Android development to building real-world Android applications. This roadmap will guide you through the process of setting up Android Studio and learning the basics of Kotlin, the programming language used for Android development. You will learn how to create layouts, UI, event-based programming, views, activities and intents, networking and APIs, and fragments, as well as best practices for building scalable and maintainable apps. The roadmap includes hands-on practice projects to help you gain the skills and knowledge needed to create your own Android apps.",
   "sections": [
     {
       "id": "1",
