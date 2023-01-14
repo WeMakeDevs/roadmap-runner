@@ -111,3 +111,7 @@ select {
   background-image: linear-gradient(to right, rgb(var(--content), 0), rgb(var(--content), .1));
   border: 2px solid rgb(30, 224, 224, .2);
 }
+
+button {
+  cursor: pointer;
+}
