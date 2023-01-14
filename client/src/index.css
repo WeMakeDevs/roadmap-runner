@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+
+  --ff-serif:  'Poppins', sans-serif;
+
+  /* colors */
+  --clr-primary: #6d28d9;
+  --clr-primary-dark: #5b21b6;
+  --clr-primary-light: #ddd6fe;
+
+  --clr-secondary: #6b7280;
+  --clr-secondary-dark: #374151;
+  --clr-secondary-light: #e5e7eb;
+
+  --clr-green: #16a34a;
+  --clr-green-dark: #15803d;
+  --clr-green-light: #90ee8a;
+
+  --clr-yellow: #eab308;
+  --clr-yellow-dark: #a16207;
+  --clr-yellow-light: #fef08a;
+
+  --clr-red: #dc2626;
+  --clr-red-dark: #b91c1c;
+  --clr-red-light: #ffcdce;
+
+  --clr-blue: #60a5fa;
+  --clr-blue-dark: #1d4ed8;
+  --clr-blue-light: #bfdbfe;
+
+  --clr-gray-light: #f3f4f6;
+  --clr-dark-gray: #374151;
+  --clr-gray-opacity: rgb(243, 244, 246, 0.5);
+
+
+  /* box shadow */
+  --bs-gray: 0px 3px 18px -5px #d1d5db;
+  --bs-gray-dark: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-serif)
+}
+
+img,
+video,
+iframe {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, for users who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
