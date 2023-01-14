@@ -1,7 +1,47 @@
+
+.roadmap-container {
+    display: flex;
+    max-width: 1350px;
+}
+
+.roadmap-enroll-btn {
+    background-color: var(--clr-green);
+    color: white;
+    padding: 0.5rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+
 .roadmap {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    position: relative;
+    padding: 1rem;
+}
+
+.roadmap-info {
+    width: 30%;
+    border-left: 1px solid gray;
+    padding: 1rem;
+    color: var(--clr-secondary);
+    font-size: 0.9rem;
+}
+
+.roadmap-info>div {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem
+}
+
+.roadmap-info img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
 }
 
 .section {
