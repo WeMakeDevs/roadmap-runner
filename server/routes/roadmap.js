@@ -3,6 +3,7 @@ import {
   addRoadmap,
   getAllRoadmaps,
   getRoadmapByRoadmapId,
+  getRoadmapByUserId,
 } from "../controllers/roadmapController.js";
 import { isAuthorized } from "../middleware/auth.js";
 
@@ -12,5 +13,6 @@ const router = express.Router();
 // router.route("/roadmap").post(addRoadmap);
 router.route("/roadmap").get(isAuthorized, getAllRoadmaps);
 router.route("/roadmap/:id").get(isAuthorized, getRoadmapByRoadmapId);
+router.route("/roadmapsByUserId/").get(isAuthorized, getRoadmapByUserId);
 
 export default router;

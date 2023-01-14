@@ -57,16 +57,12 @@ export const getRoadmapByRoadmapId = async (req, res) => {
 };
 
 export const getRoadmapByUserId = async (req, res) => {
-  const { id } = req.params;
-
-  if (!id) {
-    return res
-      .status(400)
-      .json({ success: false, message: "User id is required" });
-  }
-
   try {
-    const user = await User.findById(id);
+    const user = await User.findById(req.user._id).populate(
+      "enrolledRoadmaps",
+      "name _id bannerImage"
+    );
+
     return res
       .status(200)
       .json({ success: true, roadmaps: user.enrolledRoadmaps });
