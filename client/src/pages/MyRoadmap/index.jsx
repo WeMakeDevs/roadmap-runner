@@ -23,10 +23,11 @@ const Roadmap = () => {
     <SidebarLayout>
       <div className="roadmap-container">
         <div>
+          <p style={{color: "var(--clr-secondary)"}}>My Roadmap</p>
           <h1>
             {roadmap?.name} {id}
           </h1>
-          <button className="roadmap-enroll-btn">Enroll</button>
+          <p className="progress">50% completed</p>
 
           <div className="roadmap">
             {roadmap &&
