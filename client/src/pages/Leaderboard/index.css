@@ -1,0 +1,66 @@
+.leaderboard-container {
+    display: flex;
+    height: 100%;
+}
+
+.leaderboard-container .stats {
+    width: 30%;
+    padding: 6rem 2rem 0 2rem;
+    font-family: var(--ff-mono);
+    border-left: 1px solid rgb(163, 168, 195, .2);
+    text-align: center;
+}
+
+.leaderboard-container .stats-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.leaderboard-container .stats-count {
+    font-size: 3.2rem;
+}
+
+
+
+.leaderboard-container .leaderboard {
+    flex-grow: 1;
+}
+
+.leaderboard-card-container {
+    margin: 3rem 1rem;
+}
+
+.leaderboard-card {
+    margin: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem 1rem 2rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.leaderboard-card div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.leaderboard-card .rank {
+    width: 4rem;
+    border-radius: 2.5rem;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.leaderboard-card .profile img {
+    width: 3rem;
+    margin-left: 3rem;
+    margin-right: 0.5rem;
+}
+
+.leaderboard .points {
+    font-family: var(--ff-mono);
+    font-size: 1.1rem;
+}
