@@ -5,7 +5,8 @@ import SmileyFace from "../../assets/mood/smileyface.svg";
 import "./index.css";
 import { LeaderboardIcon, MyRoadmapIcon, RoadmapIcon } from "../../assets/sidebar";
 
-const Home = () => {
+const Home = ({loading = true}) => {
+
   return (
     <SidebarLayout>
       <div className="home-container">
