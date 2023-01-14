@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SidebarLayout from "../components/SidebarLayout";
 
 const Roadmaps = () => {
   return (
-    <div>Roadmaps</div>
-  )
-}
+    <SidebarLayout>
+      <div>Roadmaps</div>
+    </SidebarLayout>
+  );
+};
 
-export default Roadmaps
+export default Roadmaps;

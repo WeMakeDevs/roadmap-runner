@@ -1,0 +1,38 @@
+.sidebar {
+    padding: 1rem;
+    position: relative;
+    height: calc(100vh - 3.5rem);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .link-wrapper {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-70%);
+}
+
+.sidebar .link-wrapper li {
+    margin: 2.5rem 0;
+}
+
+.sidebar .link-wrapper i {
+    color: var(--clr-primary);
+    margin-right: 1rem
+}
+
+.sidebar button {
+    background: white;
+    border: 1px solid white;
+    padding: 0;
+}
