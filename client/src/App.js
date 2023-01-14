@@ -21,29 +21,26 @@ function App() {
             path="/signin"
             element={user ? <Navigate to="/home" /> : <SignIn />}
           />
-          <Route
-            path="/home"
-            element={user ? <Home /> : <Navigate to="/signin" />}
-          />
+          <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} />
           <Route
             path="/roadmaps"
-            element={user ? <Roadmaps /> : <Navigate to="/signin" />}
+            element={user ? <Roadmaps /> : <Navigate to="/" />}
           />
           <Route
             path="/roadmaps/:id"
-            element={user ? <Roadmap /> : <Navigate to="/signin" />}
+            element={user ? <Roadmap /> : <Navigate to="/" />}
           />
           <Route
             path="/myroadmaps"
-            element={user ? <MyRoadmaps /> : <Navigate to="/signin" />}
+            element={user ? <MyRoadmaps /> : <Navigate to="/" />}
           />
           <Route
             path="/myroadmaps/:id"
-            element={user ? <MyRoadmap /> : <Navigate to="/signin" />}
+            element={user ? <MyRoadmap /> : <Navigate to="/" />}
           />
           <Route
             path="/leaderboard"
-            element={user ? <Leaderboard /> : <Navigate to="/signin" />}
+            element={user ? <Leaderboard /> : <Navigate to="/" />}
           />
         </Routes>
       )}
