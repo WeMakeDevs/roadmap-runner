@@ -1,6 +1,6 @@
-const express = require('express')
-const cors = require('cors')
-const morgan = require('morgan')
+import express from 'express'
+import cors from 'cors'
+import morgan from 'morgan'
 
 const app = express()
 
@@ -13,5 +13,6 @@ app.get('/', (req, res) => {
   res.status(200).json({ message: 'hello world!' });
 });
 
-exports.app = app
+export {app}
+
 

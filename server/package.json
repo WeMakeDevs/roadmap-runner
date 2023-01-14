@@ -12,6 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/siddhigate/roadmap-runner.git#main"
   },
+  "type": "module",
   "keywords": [
     "Express",
     "Node",
