@@ -3,19 +3,8 @@
     height: 100%
 }
 
-.home-container .share-link {
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    background: rgb(21, 152, 239);
-    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
-    font-size: 0.9rem;
-}
-
-.home-container .share-link i {
-    margin-left: 0.65rem;
-    font-size: 1rem;
+.home-container h1 {
+    margin-bottom: 1rem;
 }
 
 .home-container>div:nth-child(2) {

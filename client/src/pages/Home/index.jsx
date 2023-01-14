@@ -8,31 +8,16 @@ import {
   MyRoadmapIcon,
   RoadmapIcon,
 } from "../../assets/sidebar";
-import { useState } from "react";
+import ShareTweet from "../../components/TweetShare";
 
 const Home = ({ loading = true }) => {
-  const [shareProgressText, setShareProgressText] = useState("Testing");
-
-  function shareProgressUrl() {
-    return (
-      "http://twitter.com/share?text=" + encodeURIComponent(shareProgressText)
-    );
-  }
 
   return (
     <SidebarLayout>
       <div className="home-container">
         <div>
           <h1>Hello Siddhi 👋</h1>
-          <a
-            className="share-link"
-            href={shareProgressUrl()}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Share your progress
-            <i className="fa-brands fa-twitter"></i>
-          </a>
+          <ShareTweet />
           <div className="stats-card">
             <section className="roadmaps-card card">
               <img src={RoadmapIcon} alt="" />
