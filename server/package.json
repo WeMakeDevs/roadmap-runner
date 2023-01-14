@@ -1,0 +1,37 @@
+{
+  "name": "roadmap-runner-server",
+  "version": "1.0.0",
+  "description": "Express App for RoadmapRunner Server ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhigate/roadmap-runner.git#main"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "Hackathon",
+    "Server"
+  ],
+  "author": "Kedar Basutkar, Siddhi Gate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddhigate/roadmap-runner/issues"
+  },
+  "homepage": "https://github.com/siddhigate/roadmap-runner/tree/main#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "mongoose": "^6.8.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
