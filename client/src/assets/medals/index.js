@@ -1,0 +1,11 @@
+export { default as First } from "./first.png";
+export { default as Second } from "./second.png";
+export { default as Third } from "./third.png";
+export { default as Four } from "./four.png";
+export { default as Five } from "./five.png";
+export { default as Six } from "./six.png";
+export { default as Seven } from "./seven.png";
+export { default as Eight } from "./eight.png";
+export { default as Nine } from "./nine.png";
+export { default as Ten } from "./ten.png";
+export { default as Medal } from "./medal.png";
