@@ -1,0 +1,28 @@
+.roadmap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin: 1rem 0;
+}
+
+.section .section-title {
+    font-size: 2rem;
+}
+
+.subsection {
+    margin: 2rem 1rem;
+}
+
+.subsection .subsection-title {
+    font-size: 1.5rem;
+}
+
+.resource {
+    /* border: 1px solid white; */
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 1rem 2rem;
+}
