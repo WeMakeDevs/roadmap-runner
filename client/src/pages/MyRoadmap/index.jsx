@@ -27,6 +27,7 @@ const Roadmap = () => {
           <h1>
             {roadmap?.name} {id}
           </h1>
+          <p className="progress">50% completed</p>
 
           <div className="roadmap">
             {roadmap &&

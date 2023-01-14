@@ -104,3 +104,10 @@
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+
+.progress {
+    color: var(--clr-green);
+    font-family: var(--ff-mono);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
