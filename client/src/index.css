@@ -3,15 +3,18 @@
 
 :root {
 
-  --ff-serif:  'Poppins', sans-serif;
+  --ff-serif: 'Poppins', sans-serif;
   --ff-mono: 'Space Mono', monospace;
 
   /* colors */
+
+  --clr-dark: #120e26;
+
   --clr-primary: #6d28d9;
   --clr-primary-dark: #5b21b6;
   --clr-primary-light: #ddd6fe;
 
-  --clr-secondary: #6b7280;
+  --clr-secondary: rgb(163, 168, 195);
   --clr-secondary-dark: #374151;
   --clr-secondary-light: #e5e7eb;
 
@@ -35,6 +38,7 @@
   --clr-dark-gray: #374151;
   --clr-gray-opacity: rgb(243, 244, 246, 0.5);
 
+  --content: 83, 83, 83;
 
   /* box shadow */
   --bs-gray: 0px 3px 18px -5px #d1d5db;
@@ -65,7 +69,9 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--ff-serif)
+  font-family: var(--ff-serif);
+  background-color: #120e26;
+  color: white;
 }
 
 img,
@@ -96,4 +102,16 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+.card {
+  border: 1px solid var(--clr-primary);
+  border-radius: 5px;
+  padding: 2rem 1rem;
+  background-image: linear-gradient(to right, rgb(var(--content), 0), rgb(var(--content), .1));
+  border: 2px solid rgb(30, 224, 224, .2);
+}
+
+button {
+  cursor: pointer;
 }

@@ -12,18 +12,23 @@ import {
   GitLogo,
   MongoDBLogo,
 } from "../../assets/tech";
+import ContriGraph from "../../assets/contrigraph.svg"
 import "./index.css";
+import Logo from "../../assets/logo.png";
 
 const Landing = () => {
   return (
     <div className="landing">
       <div className="wrapper">
+        <img src={Logo} alt="" className="logo"/>
         <h1>RoadmapRunner</h1>
         <p>Navigating the path to success, one roadmap at a time.</p>
         <Link to="/signin">
           Start Learning <i className="fa-solid fa-arrow-right"></i>
         </Link>
       </div>
+
+      <img src={ContriGraph} alt="" />
 
       <img src={CSSLogo} alt="CSS logo" className="bg-logo css" />
       <img src={HTMLLogo} alt="CSS logo" className="bg-logo html" />
