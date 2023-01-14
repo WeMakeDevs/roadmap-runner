@@ -22,6 +22,8 @@ const Roadmap = () => {
     fetchRoadmaps();
   }, [user, id]);
 
+  console.log(roadmap);
+
   return (
     <SidebarLayout>
       <div className="roadmap-container">

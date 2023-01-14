@@ -1,0 +1,663 @@
+{
+  "name": "Backend Development",
+  "tagline": "Learn backend development and unlock the power of server-side programming",
+  "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/backend_w6cm2b.png",
+  "description": "This roadmap will provide an introduction to backend development, including the basics of building and deploying APIs, Microservices, and understanding of the internet and operating systems. You will learn Linux terminal basics, JavaScript, version control, relational and NoSQL databases and web security best practices. With this roadmap, you will gain the knowledge and skills needed to become a proficient backend developer.",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Introduction",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "1.1.1",
+              "title": "What is Backend Development",
+              "url": "https://www.youtube.com/watch?v=cbSrsYiRamo"
+            },
+            {
+              "id": "1.1.2",
+              "title": "Introduction to Backend Development",
+              "url": "https://dev.to/kaperskyguru/introduction-to-backend-development-506a"
+            },
+            {
+              "id": "1.1.3",
+              "title": "How Backend works",
+              "url": "https://www.youtube.com/watch?v=4r6WdaY3SOA"
+            },
+            {
+              "id": "1.1.4",
+              "title": "Guide to Backend Development",
+              "url": "https://www.upwork.com/resources/beginners-guide-back-end-development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Basics of Frontend",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "2.1.1",
+              "title": "Frontend Developer crash course",
+              "url": "https://www.youtube.com/watch?v=QA0XpGhiz5w"
+            },
+            {
+              "id": "2.1.2",
+              "title": "CSS",
+              "url": "https://www.youtube.com/watch?v=1Rs2ND1ryYc"
+            },
+            {
+              "id": "2.1.3",
+              "title": "HTML",
+              "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Build a project",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "3.1.1",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            },
+            {
+              "id": "3.1.2",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Understanding Internet",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "How does internet work",
+          "resources": [
+            {
+              "id": "4.1.1",
+              "title": "Computer Networking course - Kunal Khushwaha(Youtube)",
+              "url": "https://www.youtube.com/watch?v=IPvYjXCsTg8"
+            },
+            {
+              "id": "4.1.2",
+              "title": "How does the Internet Work? - Vox(Youtube)",
+              "url": "https://www.youtube.com/watch?v=TNQsmPf24go"
+            },
+            {
+              "id": "4.1.3",
+              "title": "How does the Internet Work? - Mozilla web docs",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+            },
+            {
+              "id": "4.1.4",
+              "title": "How Does the Internet Work? - Stanford.edu",
+              "url": "https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm"
+            },
+            {
+              "id": "4.1.5",
+              "title": "How Does the Internet Work? - cloudflare",
+              "url": "https://www.cloudflare.com/en-in/learning/network-layer/how-does-the-internet-work/"
+            },
+            {
+              "id": "4.1.6",
+              "title": "How Does the Internet Work? - Lesics(Youtube)",
+              "url": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+            },
+            {
+              "id": "4.1.7",
+              "title": "How Does the Internet Work? - Lesics(Youtube)",
+              "url": "https://www.youtube.com/watch?v=n_KghQP86Sw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Operating System Basics",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "5.1.1",
+              "title": "Introduction to operating systems - Jenny's Lectures(Youtube)",
+              "url": "https://www.youtube.com/watch?v=RozoeWzT7IM"
+            },
+            {
+              "id": "5.1.2",
+              "title": "Operating system basics - Geek's Lesson(Youtube)",
+              "url": "https://www.youtube.com/watch?v=6-mdtMKfEYM"
+            },
+            {
+              "id": "5.1.3",
+              "title": "How do operating systems work? - ClickView(Youtube)",
+              "url": "https://www.youtube.com/watch?v=GjNp0bBrjmU"
+            },
+            {
+              "id": "5.1.4",
+              "title": "What is an operating system - Techquickie(Youtube)",
+              "url": "https://www.youtube.com/watch?v=pVzRTmdd9j0"
+            },
+            {
+              "id": "5.1.5",
+              "title": "Operating system tutorial - Tutorialspoint",
+              "url": "https://www.tutorialspoint.com/operating_system/index.htm#:~:text=An%20Operating%20System%20(OS)%20is%20an%20interface%20between%20a%20computer,as%20disk%20drives%20and%20printers."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Linux Terminal Basics",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "6.1.1",
+              "title": "Complete Linux Course",
+              "url": "https://www.youtube.com/watch?v=iwolPf6kN-k"
+            },
+            {
+              "id": "6.1.2",
+              "title": "Basic Linux Commands",
+              "url": "https://www.youtube.com/watch?v=J2zquYPJbWY"
+            },
+            {
+              "id": "6.1.3",
+              "title": "Linux Tutorial",
+              "url": "https://www.youtube.com/watch?v=cBokz0LTizk"
+            },
+            {
+              "id": "6.1.4",
+              "title": "Linux Command Cheatsheet",
+              "url": "https://www.guru99.com/linux-commands-cheat-sheet.html"
+            },
+            {
+              "id": "6.1.5",
+              "title": "Linux Masterclass Course - Apoorv Goyal(YouTube)",
+              "url": "https://www.youtube.com/playlist?list=PL2kSRH_DmWVZp_cu6MMPWkgYh7GZVFS6i"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "JavaScript",
+      "subsections": [
+        {
+          "id": "7.1",
+          "title": "JS tutorials",
+          "resources": [
+            {
+              "id": "7.1.1",
+              "title": "Node.js Crash Course - Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=fBNz5xF-Kx4"
+            },
+            {
+              "id": "7.1.2",
+              "title": "Node.js Documentation",
+              "url": "https://nodejs.org/en/docs/"
+            },
+            {
+              "id": "7.1.3",
+              "title": "Express js Getting started",
+              "url": "https://expressjs.com/en/starter/installing.html"
+            },
+            {
+              "id": "7.1.4",
+              "title": "Node.js tutorial-Programming with Mosh(Youtube)",
+              "url": ""
+            },
+            {
+              "id": "7.1.5",
+              "title": "Node.js crash course playlist - The Net Ninja(Youtube)",
+              "url": "https://www.youtube.com/watch?v=TlB_eWDSMt4"
+            },
+            {
+              "id": "7.1.6",
+              "title": "Node.js and express.js course - freecodecamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=Oe421EPjeBE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Version Control",
+      "subsections": [
+        {
+          "id": "8.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "8.1.1",
+              "title": "Git documentation",
+              "url": "https://git-scm.com/docs/gittutorial"
+            },
+            {
+              "id": "8.1.2",
+              "title": "Git Tutorial",
+              "url": "https://www.youtube.com/watch?v=apGV9Kg7ics&t=1964s"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Relational Databases",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "Introduction",
+          "resources": [
+            {
+              "id": "9.1.1",
+              "title": "What is Relational Database",
+              "url": "https://www.youtube.com/watch?v=OqjJjpjDRLc"
+            }
+          ]
+        },
+        {
+          "id": "9.2",
+          "title": "PostgreSQL",
+          "resources": [
+            {
+              "id": "9.2.1",
+              "title": "PostgreSQL Tutorial - freecodecamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=qw--VYLpxG4"
+            },
+            {
+              "id": "9.2.2",
+              "title": "PosgresSQL Course - Amigoscode(Youtube)",
+              "url": "https://www.youtube.com/playlist?list=PLwvrYc43l1MxAEOI_KwGe8l42uJxMoKeS"
+            },
+            {
+              "id": "9.2.3",
+              "title": "postgresqltutorial.com",
+              "url": "https://www.postgresqltutorial.com/"
+            },
+            {
+              "id": "9.2.4",
+              "title": "Nodejs and PostgreSQL Project",
+              "url": "https://www.youtube.com/playlist?list=PLillGF-RfqbaEmlPcX5e_ejaK7Y5MydkW"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "NoSQL Databases",
+      "subsections": [
+        {
+          "id": "10.1",
+          "title": "Introduction",
+          "resources": [
+            {
+              "id": "10.1.1",
+              "title": "What is NoSQL Database",
+              "url": "https://www.youtube.com/watch?v=uD3p_rZPBUQ"
+            },
+            {
+              "id": "10.1.2",
+              "title": "SQL vs NoSQL",
+              "url": "https://www.youtube.com/watch?v=Q5aTUc7c4jg"
+            }
+          ]
+        },
+        {
+          "id": "10.2",
+          "title": "MongoDB",
+          "resources": [
+            {
+              "id": "10.2.1",
+              "title": "MongoDB Tutorial - Amigoscode(Youtube)",
+              "url": "https://www.youtube.com/watch?v=Www6cTUymCY"
+            },
+            {
+              "id": "10.2.2",
+              "title": "Complete MongoDB Tutorial - The Net Ninja(Youtube)",
+              "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9h77dJ-QJlwGlZlTd4ecZOA"
+            },
+            {
+              "id": "10.2.3",
+              "title": "Build a Markdown Blog with Node.js, Express and MongoDB",
+              "url": "https://www.youtube.com/watch?v=1NrHkjlWVhM"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "APIs",
+      "subsections": [
+        {
+          "id": "11.1",
+          "title": "Learn and Build APIs",
+          "resources": [
+            {
+              "id": "11.1.1",
+              "title": "REST API with Node js & Express - Programming with Mosh(Youtube)",
+              "url": "https://www.youtube.com/watch?v=pKd0Rpw7O48"
+            },
+            {
+              "id": "11.1.2",
+              "title": "Back End Development and APIs - FreeCodeCamp",
+              "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/"
+            },
+            {
+              "id": "11.1.3",
+              "title": "REST API With Node.js, Express, & MongoDB - Web Dev Simplified(Youtube)",
+              "url": "https://www.youtube.com/watch?v=fgTGADljAeg"
+            },
+            {
+              "id": "11.1.4",
+              "title": "Build a Node.js API - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=fsCjFHuMXj0"
+            }
+          ]
+        },
+        {
+          "id": "11.2",
+          "title": "MVC",
+          "resources": [
+            {
+              "id": "11.2.1",
+              "title": "MVC explained - Web Dev Simplified(Youtube)",
+              "url": "https://www.youtube.com/watch?v=DUg2SWWK18I"
+            },
+            {
+              "id": "11.2.2",
+              "title": "Express Router & MVC - The Net Ninja(Youtube)",
+              "url": "https://www.youtube.com/watch?v=zW_tZR0Ir3Q"
+            }
+          ]
+        },
+        {
+          "id": "11.3",
+          "title": "Deployment",
+          "resources": [
+            {
+              "id": "11.3.1",
+              "title": "Node.js & Express,Deploying an app- Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=_GSOnHRYSS0"
+            },
+            {
+              "id": "11.3.2",
+              "title": "Full Node.js Deployment - Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=oykl1Ih9pMg"
+            },
+            {
+              "id": "11.3.3",
+              "title": "Express Tutorial, Deploying to production - Mozilla web docs",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/deployment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Microservices",
+      "subsections": [
+        {
+          "id": "12.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "12.1.1",
+              "title": "What are Microservices?",
+              "url": "https://www.youtube.com/watch?v=j3XufmvEMiM"
+            },
+            {
+              "id": "12.1.2",
+              "title": "NodeJs Microservices",
+              "url": "https://www.youtube.com/watch?v=kBzbKUirOFk"
+            },
+            {
+              "id": "12.1.3",
+              "title": "Backend Development and API projects",
+              "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/#mongodb-and-mongoose"
+            },
+            {
+              "id": "12.1.4",
+              "title": "What is a microservices archietecture and it's advantages?",
+              "url": "https://www.youtube.com/watch?v=qYhRvH9tJKw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Web Security",
+      "subsections": [
+        {
+          "id": "13.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "13.1.1",
+              "title": "HTTPS and Web Security",
+              "url": "https://www.youtube.com/watch?v=kBzbKUirOFk"
+            },
+            {
+              "id": "13.1.2",
+              "title": "How Hackers use DevTools",
+              "url": "https://www.youtube.com/watch?v=5mUUBkxayQ4"
+            },
+            {
+              "id": "13.1.3",
+              "title": "Secure ExpressJS application with Helment",
+              "url": "https://www.youtube.com/watch?v=tGMPWVl_l9Y"
+            },
+            {
+              "id": "13.1.4",
+              "title": "NodeJS Security Best Practices",
+              "url": "https://blog.sqreen.com/nodejs-security-best-practices/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Testing",
+      "subsections": [
+        {
+          "id": "14.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "14.1.1",
+              "title": "Testing a Rest API",
+              "url": "https://www.youtube.com/watch?v=I4BZQr-5mBY"
+            },
+            {
+              "id": "14.1.2",
+              "title": "Jest Tutorial",
+              "url": "https://www.youtube.com/watch?v=8gHEv5iNRKk"
+            },
+            {
+              "id": "14.1.3",
+              "title": "Testing Node.js with Mocha",
+              "url": "https://www.youtube.com/watch?v=Bs68k6xfR3E"
+            },
+            {
+              "id": "14.1.4",
+              "title": "Test Driven Development",
+              "url": "https://www.youtube.com/watch?v=ISAjES_Gklc"
+            }
+          ]
+        },
+        {
+          "id": "14.2",
+          "title": "Documentations",
+          "resources": [
+            {
+              "id": "14.2.1",
+              "title": "Mocha",
+              "url": "https://mochajs.org/"
+            },
+            {
+              "id": "14.2.2",
+              "title": "Chai",
+              "url": "https://www.chaijs.com/guide/"
+            },
+            {
+              "id": "14.2.3",
+              "title": "Jest",
+              "url": "https://jestjs.io/docs/getting-started"
+            },
+            {
+              "id": "14.2.4",
+              "title": "Cucumber",
+              "url": "https://cucumber.io/docs/guides/"
+            },
+            {
+              "id": "14.2.4",
+              "title": "Pactum",
+              "url": "https://pactumjs.github.io/guides/api-testing.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Containerization",
+      "subsections": [
+        {
+          "id": "15.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "15.1.1",
+              "title": "Containers Explained",
+              "url": "https://www.youtube.com/watch?v=0qotVMX-J5s"
+            }
+          ]
+        },
+        {
+          "id": "15.2",
+          "title": "Docker",
+          "resources": [
+            {
+              "id": "15.2.1",
+              "title": "Docker Tutorial - Kunal Khushwaha(Youtube)",
+              "url": "https://www.youtube.com/watch?v=17Bl31rlnRM"
+            },
+            {
+              "id": "15.2.2",
+              "title": "Docker Tutorial - TechWorld With Nana(Youtube)",
+              "url": "https://www.youtube.com/watch?v=3c-iBn73dDE"
+            },
+            {
+              "id": "15.2.3",
+              "title": "Learn Docker - freecodecamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=9zUHg7xjIqQ"
+            },
+            {
+              "id": "15.2.4",
+              "title": "Docs",
+              "url": "https://docs.docker.com/"
+            },
+            {
+              "id": "15.2.5",
+              "title": "Build a NodeJS application with Docker",
+              "url": "https://www.youtube.com/watch?v=PsWeSg38XFY"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Web Servers",
+      "subsections": [
+        {
+          "id": "16.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "16.1.1",
+              "title": "Web servers and their working - Hussein Nasser(Youtube)",
+              "url": "https://www.youtube.com/watch?v=JhpUch6lWMw"
+            },
+            {
+              "id": "16.1.2",
+              "title": "What is a web server - Mozilla web docs",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server"
+            },
+            {
+              "id": "16.1.3",
+              "title": "Web Server - Tutorialspoint",
+              "url": "https://www.tutorialspoint.com/internet_technologies/web_servers.htm"
+            },
+            {
+              "id": "16.1.4",
+              "title": "What is a web server? - NGINX",
+              "url": "https://www.nginx.com/resources/glossary/web-server/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Build Projects",
+      "subsections": [
+        {
+          "id": "17.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "17.1.1",
+              "title": "4 projects with Node.js/Express",
+              "url": "https://www.youtube.com/watch?v=qwfE7fSVaZM"
+            },
+            {
+              "id": "17.1.2",
+              "title": "Project Ideas",
+              "url": "https://gist.github.com/MWins/41c6fec2122dd47fdfaca31924647499"
+            },
+            {
+              "id": "17.1.3",
+              "title": "50 Node.js/Express Project with tutorial",
+              "url": "https://www.youtube.com/playlist?list=PL9iaMyazOxXsIl-WQV9hoVmnHYy49DuVl"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
