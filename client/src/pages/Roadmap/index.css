@@ -62,7 +62,14 @@
 
 .resource {
     /* border: 1px solid white; */
-    width: fit-content;
+    max-width: 650px;
     padding: 0.5rem 1rem;
     margin: 1rem 0 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.resource i {
+    color: var(--clr-primary);
 }
