@@ -513,42 +513,42 @@
           ]
         },
         {
-          "id": "11.3",
+          "id": "12.3",
           "title": "Chakra UI",
           "resources": [
             {
-              "id": "11.3.1",
+              "id": "12.3.1",
               "title": "Tutorial 1 - Chakra UI for beginners",
               "url": "https://www.chakrauiforbeginners.com/play"
             },
             {
-              "id": "11.3.2",
+              "id": "12.3.2",
               "title": "Tutorial 2 - Build check out page with chakra UI",
               "url": "https://egghead.io/lessons/react-install-and-setup-chakra-ui-in-a-react-project"
             },
             {
-              "id": "11.3.2",
+              "id": "12.3.2",
               "title": "Docs",
               "url": "https://chakra-ui.com/getting-started"
             }
           ]
         },
         {
-          "id": "11.4",
+          "id": "12.4",
           "title": "Tailwind CSS",
           "resources": [
             {
-              "id": "11.4.1",
+              "id": "12.4.1",
               "title": "Tailwind css crash course - Traversy Media(Youtube)",
               "url": "https://www.youtube.com/watch?v=UBOj6rqRUME"
             },
             {
-              "id": "11.4.2",
+              "id": "12.4.2",
               "title": "Tailwind crash course - Traversy Media(Youtube)",
               "url": "https://www.youtube.com/watch?v=dFgzHOX84xQ"
             },
             {
-              "id": "11.4.3",
+              "id": "12.4.3",
               "title": "Docs",
               "url": "https://tailwindcss.com/docs/installation"
             }
@@ -593,16 +593,16 @@
       "title": "Sample projects for practice",
       "subsections": [
         {
-          "id": "13.1",
+          "id": "14.1",
           "title": "",
           "resources": [
             {
-              "id": "13.1.1",
+              "id": "14.1.1",
               "title": "frontendmentor.io",
               "url": "https://www.frontendmentor.io/"
             },
             {
-              "id": "13.1.2",
+              "id": "14.1.2",
               "title": "frontendpractice.com",
               "url": "https://www.frontendpractice.com/"
             }
