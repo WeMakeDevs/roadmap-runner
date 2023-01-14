@@ -1,0 +1,39 @@
+.signin {
+    min-height: calc(90vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.signin .wrapper {
+    background-color: white;
+    /* box-shadow: var(--bs-gray-dark); */
+    border: 1px solid lightgray;
+    text-align: center;
+    padding: 2rem 1rem;
+    min-width: 400px;
+    margin: auto;
+}
+
+.signin .wrapper h1 {
+    font-size: 2.5rem;
+}
+
+.signin .wrapper p {
+    font-family: var(--ff-mono);
+    font-size: 1.1rem;
+}
+
+.signin .wrapper button {
+    margin-top: 2rem;
+    background-color: white;
+    border: 1px solid gray;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.signin .wrapper button img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}

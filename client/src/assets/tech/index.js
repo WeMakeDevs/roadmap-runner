@@ -1,0 +1,10 @@
+export { default as CSSLogo } from "./css.png";
+export { default as HTMLLogo } from "./html.png";
+export { default as JSLogo } from "./js.png";
+export { default as TSLogo } from "./ts.png";
+export { default as NodejsLogo } from "./nodejs.png";
+export { default as DbLogo } from "./database.png";
+export { default as ReactLogo } from "./react.png";
+export { default as ReduxLogo } from "./redux.png";
+export { default as GitLogo } from "./git.png";
+export { default as MongoDBLogo } from "./mongodb.png";

@@ -1,0 +1,250 @@
+.landing {
+    min-height: calc(90vh - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.landing .wrapper {
+    width: fit-content;
+    text-align: center;
+    background-color: white;
+}
+
+.landing h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    /* font-family: var(--ff-mono); */
+}
+
+.landing p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--ff-mono);
+}
+
+.landing a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 0.75rem 2.5rem;
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: 5px;
+    /* font-family: var(--ff-mono); */
+}
+
+.landing i {
+    margin-left: 0.5rem;
+}
+
+.landing .bg-logo {
+    position: absolute;
+    width: 2.5rem;
+    animation: tilt-n-move-shaking 5s infinite;
+    z-index: -1;
+}
+
+.landing .bg-logo.css {
+    top: 10%;
+    left: 15%;
+    animation: vertical-shaking 5s infinite;
+}
+
+.landing .bg-logo.js {
+    bottom: 10%;
+    left: 10%;
+}
+
+.landing .bg-logo.db {
+    top: 40%;
+    left: 20%;
+}
+
+.landing .bg-logo.ts {
+    top: 40%;
+    right: 20%;
+    animation: vertical-shaking 3s infinite;
+}
+
+.landing .bg-logo.nodejs {
+    bottom: 10%;
+    right: 10%;
+    animation: horizontal-shaking 3s infinite;
+}
+
+.landing .bg-logo.html {
+    top: 10%;
+    right: 15%;
+}
+
+.landing .bg-logo.react {
+    bottom: 5%;
+    right: 40%;
+}
+
+.landing .bg-logo.redux {
+    bottom: 5%;
+    left: 30%;
+}
+
+.landing .bg-logo.git {
+    top: 5%;
+    right: 40%;
+}
+
+.landing .bg-logo.mongodb {
+    top: 20%;
+    left: 35%;
+}
+
+
+@keyframes vertical-shaking {
+    0% {
+        transform: translateY(0)
+    }
+
+    25% {
+        transform: translateY(5px)
+    }
+
+    50% {
+        transform: translateY(-5px)
+    }
+
+    75% {
+        transform: translateY(5px)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes tilt-n-move-shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+
+@keyframes horizontal-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateX(5px)
+    }
+
+    50% {
+        transform: translateX(-5px)
+    }
+
+    75% {
+        transform: translateX(5px)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+@keyframes jump-shaking {
+    0% {
+        transform: translateX(0)
+    }
+
+    25% {
+        transform: translateY(-9px)
+    }
+
+    35% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    55% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    65% {
+        transform: translateY(-9px) rotate(17deg)
+    }
+
+    75% {
+        transform: translateY(-9px) rotate(-17deg)
+    }
+
+    100% {
+        transform: translateY(0) rotate(0)
+    }
+}
+
+@keyframes skew-x-shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+
+    5% {
+        transform: skewX(15deg);
+    }
+
+    10% {
+        transform: skewX(-15deg);
+    }
+
+    15% {
+        transform: skewX(15deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+@keyframes skew-y-shake {
+    0% {
+        transform: skewY(-15deg);
+    }
+
+    5% {
+        transform: skewY(15deg);
+    }
+
+    10% {
+        transform: skewY(-15deg);
+    }
+
+    15% {
+        transform: skewY(15deg);
+    }
+
+    20% {
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(0deg);
+    }
+}
