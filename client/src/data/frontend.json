@@ -1,5 +1,6 @@
 {
   "name": "Frontend Development",
+  "tagline": "Learn frontend development and take your career to new heights",
   "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/frontend_nftugn.png",
   "description": "This roadmap is designed for those who want to become a frontend developer. It covers everything from understanding the basics of web development and the internet to mastering HTML, CSS, JavaScript, and popular frameworks and libraries like React, Vue, and Angular. You will learn how to create visually appealing and interactive websites and web applications, and gain an understanding of important tools and technologies like version control, package managers, and build tools. With hands-on projects and real-world examples, this roadmap will prepare you for a career in frontend development.",
   "sections": [

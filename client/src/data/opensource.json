@@ -1,5 +1,6 @@
 {
   "name": "Open Source",
+  "tagline": "Learn open source and contribute to the global community of developers",
   "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/opensource_gtnpgj.png",
   "description": "This roadmap provides a comprehensive introduction to the world of open source and guides learners through the process of getting started, including learning about open source values and ethics, understanding Git and version control, creating their own open source projects and contributing to existing ones, and finding paid open source programs and internships. Whether you are new to open source or looking to improve your skills, this roadmap will help you take the first steps towards becoming an active member of the open source community.",
   "sections": [

@@ -1,5 +1,6 @@
 {
   "name": "DevOps",
+  "tagline": "Learn DevOps and streamline your software development process",
   "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/devops_fvw7e3.png",
   "description": "This is a comprehensive roadmap on Backend Development and DevOps. It covers topics such as GoLang, Linux Terminal, Operating Systems, Containers, Configuration Management, Container Orchestration, Infrastructure Provisioning, Service Mesh, CI/CD, Infrastructure Monitoring, and Application Monitoring. The roadmap includes resources such as video tutorials, documentation, and practice projects to help learners acquire the knowledge and skills necessary to become proficient in DevOps.",
   "sections": [

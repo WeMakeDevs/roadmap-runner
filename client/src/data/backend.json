@@ -1,5 +1,6 @@
 {
   "name": "Backend Development",
+  "tagline": "Learn backend development and unlock the power of server-side programming",
   "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/backend_w6cm2b.png",
   "description": "This roadmap will provide an introduction to backend development, including the basics of building and deploying APIs, Microservices, and understanding of the internet and operating systems. You will learn Linux terminal basics, JavaScript, version control, relational and NoSQL databases and web security best practices. With this roadmap, you will gain the knowledge and skills needed to become a proficient backend developer.",
   "sections": [
