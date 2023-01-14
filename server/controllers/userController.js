@@ -37,16 +37,20 @@ export const enrollRoadmap = async (req, res) => {
   try {
     const user = await User.findById(req.user._id);
     console.log(user.enrolledRoadmaps);
-    const roadmapsFound = user.enrolledRoadmaps.filter(
-      (roadmap) => roadmap.roadmapId === new mongoose.mongo.ObjectId(id)
-    );
-    console.log(roadmapsFound);
-    if (roadmapsFound.length > 0) {
+    const roadmapsCount = await User
+    .find({
+      _id: req.user._id,
+      enrolledRoadmaps: { $in: [id] },
+    })
+    .count();
+
+    if (roadmapsCount > 0) {
       return res
         .status(400)
         .json({ success: false, message: "Already enrolled" });
     }
-    user.enrolledRoadmaps.push({ roadmapId: id });
+
+    user.enrolledRoadmaps.push(id);
     await user.save();
 
     return res.status(200).json({ success: true, data: user.enrolledRoadmaps });
