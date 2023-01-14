@@ -34,7 +34,8 @@ const userSchema = new mongoose.Schema({
       ],
     },
   ],
-  progressStat: Number
+  progressStat: Number,
+  displayPicture: String
 });
 
 export default mongoose.model("User", userSchema);
