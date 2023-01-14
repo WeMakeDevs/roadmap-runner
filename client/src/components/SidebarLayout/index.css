@@ -10,6 +10,9 @@
 
 .sidebar-layout > main {
     flex-grow: 1;
-    padding: 1rem;
-    height: 300vh
+    padding: 2rem;
+}
+
+.sidebar-layout > main h1 {
+    margin-top: 1rem;
 }

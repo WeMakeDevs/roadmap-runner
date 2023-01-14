@@ -4,7 +4,7 @@ import SidebarLayout from "../components/SidebarLayout";
 const Roadmaps = () => {
   return (
     <SidebarLayout>
-      <div>Roadmaps</div>
+      <h1>Roadmaps</h1>
     </SidebarLayout>
   );
 };
