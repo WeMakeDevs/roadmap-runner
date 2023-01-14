@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ bannerImage, id, title, tagline }) => {
   return (
-    <Link to={`/roadmaps/${id}`}>
+    <Link to={`/myroadmaps/${id}`}>
       <section className="roadmap-card">
         <img src={bannerImage} alt="" />
         <h2>{title}</h2>

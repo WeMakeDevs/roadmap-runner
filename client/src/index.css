@@ -120,3 +120,75 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.checkbox-container,
+.radio-container {
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+.checkbox-container .form-control[type="checkbox"],
+.radio-container .form-control[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-container .checkbox-custom,
+.radio-container .radio-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--clr-secondary-light);
+  transition: 0.3s background-color;
+}
+
+.radio-container .radio-custom {
+  border-radius: 50%;
+}
+
+.checkbox-container .checkbox-custom:after,
+.radio-container .radio-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container .checkbox-custom:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.radio-container .radio-custom:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.checkbox-container:hover .checkbox-custom,
+.radio-container:hover .radio-custom {
+  background-color: gray;
+}
+
+.checkbox-container .form-control[type="checkbox"]:checked~.checkbox-custom,
+.radio-container .form-control[type="radio"]:checked~.radio-custom {
+  background-color: var(--clr-primary);
+}
+
+.checkbox-container .form-control[type="checkbox"]:checked~.checkbox-custom:after,
+.radio-container .form-control[type="radio"]:checked~.radio-custom:after {
+  display: block;
+}
