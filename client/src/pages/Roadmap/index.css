@@ -82,3 +82,34 @@
 .resource i {
     color: var(--clr-primary);
 }
+
+
+@media (max-width: 1250px) {
+    .roadmap-info {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .section .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .subsection {
+        margin: 2rem 0.25rem;
+    }
+    
+    .subsection .subsection-title {
+        font-size: 1.25rem;
+    }
+    
+    .resource {
+        max-width: 650px;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 1rem 0.25rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
+}

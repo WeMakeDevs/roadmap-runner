@@ -63,7 +63,6 @@
 }
 
 .resource {
-    /* border: 1px solid white; */
     max-width: 650px;
     padding: 0.5rem 1rem;
     margin: 1rem 0 1rem 2rem;
@@ -78,9 +77,6 @@
 
 .tooltip {
     position: relative;
-    /* display: inline-block;
-    border-bottom: 1px dotted black; */
-    /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
@@ -93,18 +89,10 @@
     padding: 5px 0;
     border-radius: 6px;
 
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
-    /* width: 120px;
-    top: 110%;
-    left: 50%;
-    margin-left: -60px; */
-    /* top: -5px;
-    right: 105%; */
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -114,4 +102,34 @@
     font-family: var(--ff-mono);
     margin-top: 1rem;
     font-size: 1.1rem;
+}
+
+@media (max-width: 1250px) {
+    .roadmap-info {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .section .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .subsection {
+        margin: 2rem 0.25rem;
+    }
+    
+    .subsection .subsection-title {
+        font-size: 1.25rem;
+    }
+    
+    .resource {
+        max-width: 650px;
+        padding: 0.5rem 1rem;
+        margin: 1rem 0 1rem 0.25rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    
 }
