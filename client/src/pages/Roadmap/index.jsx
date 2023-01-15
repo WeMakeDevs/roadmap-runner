@@ -5,17 +5,24 @@ import Section from "./Section";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import api from "../../api";
 import "./index.css";
+import Modal from "../../components/Modal";
+import Confetti from "../../components/Confetti";
+import { Link } from "react-router-dom";
 
 const Roadmap = () => {
   const { id } = useParams();
   const { user } = useAuthContext();
   const [roadmap, setRoadmap] = useState();
+  const [enrollLoading, setEnrollLoading] = useState(false);
+  const [enrolled, setEnrolled] = useState(false);
+  const [showEnrolledSucces, setShowEnrolledSuccess] = useState(false);
 
   useEffect(() => {
     async function fetchRoadmaps() {
       const res = await api.get(`roadmap/${id}`, {
         headers: { Authorization: user.accessToken },
       });
+      setEnrolled(res.data.isAlreadyEnrolled)
       setRoadmap(res.data.roadmap);
     }
 
@@ -23,12 +30,22 @@ const Roadmap = () => {
   }, [user, id]);
 
   const handleEnroll = async () => {
-    const res = await api.post(
-      "enroll",
-      { id },
-      { headers: { Authorization: user.accessToken } }
-    );
-    console.log(res.data);
+    setEnrollLoading(true)
+    try {
+      await api.post(
+        "enroll",
+        { id },
+        { headers: { Authorization: user.accessToken } }
+      );
+
+      setEnrolled(true)
+      setShowEnrolledSuccess(true)
+      
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setEnrollLoading(false)
+    }
   };
 
   return (
@@ -36,9 +53,27 @@ const Roadmap = () => {
       <div className="roadmap-container">
         <div>
           <h1>{roadmap?.name}</h1>
-          <button onClick={handleEnroll} className="roadmap-enroll-btn">
-            Enroll
-          </button>
+          {!enrolled && !enrollLoading && (
+            <button onClick={handleEnroll} className="roadmap-enroll-btn">
+              Enroll
+            </button>
+          )}
+          {!enrolled && enrollLoading && (
+            <button
+              onClick={handleEnroll}
+              className="roadmap-enroll-btn"
+              disabled
+            >
+              Enroll
+            </button>
+          )}
+
+          {enrolled && (
+            <p className="already-enrolled-msg">
+              {" "}
+              <i className="fa-solid fa-circle-check"></i> Already enrolled
+            </p>
+          )}
 
           <div className="roadmap">
             {roadmap &&
@@ -65,6 +100,17 @@ const Roadmap = () => {
           </div>
         </div>
       </div>
+
+      {
+        showEnrolledSucces && <>
+          <Confetti/>
+        <Modal closeModal={() => setShowEnrolledSuccess(false)}>
+          <h2>Success!</h2>
+          <p>You have successfully enrolled into the roadmap!</p>
+          <Link to={`/myroadmaps`}>Start Learning</Link>
+        </Modal>
+        </>
+      }
     </SidebarLayout>
   );
 };

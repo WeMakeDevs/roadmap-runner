@@ -47,7 +47,15 @@ export const getRoadmapByRoadmapId = async (req, res) => {
 
   try {
     const roadmap = await Roadmap.findById(id);
-    return res.status(200).json({ success: true, roadmap });
+
+    const userEnrolledRoadmapsCount = await User.find({
+      _id: req.user._id,
+      enrolledRoadmaps: { $in: [id] },
+    }).count();
+
+    const isAlreadyEnrolled = userEnrolledRoadmapsCount > 0 ? true : false;
+
+    return res.status(200).json({ success: true, roadmap, isAlreadyEnrolled });
   } catch (e) {
     console.error(e);
     return res
