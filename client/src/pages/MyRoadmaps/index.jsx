@@ -14,7 +14,12 @@ const Roadmaps = () => {
       const res = await api.get("roadmapsByUserId", {
         headers: { Authorization: user.accessToken },
       });
-      setRoadmaps(res.data.roadmaps);
+      console.log(res.data.progress)
+      setRoadmaps(res.data.roadmaps.map(roadmap => {
+        
+        const progress = res.data.progress.filter(progress => progress.roadmapId === roadmap._id)[0].progress
+        return {...roadmap, progress};
+      }));
     }
 
     fetchRoadmaps();
@@ -33,6 +38,7 @@ const Roadmaps = () => {
                 title={roadmap.name}
                 id={roadmap._id}
                 tagline={roadmap.tagline}
+                progress={roadmap.progress}
               />
             ))}
         </div>

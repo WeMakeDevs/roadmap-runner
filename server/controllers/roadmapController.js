@@ -64,6 +64,15 @@ export const getRoadmapByRoadmapId = async (req, res) => {
   }
 };
 
+function getProgressByRoadmapId(progress, roadmapId) {
+
+  for(let i = 0; i < progress.length; i++) {
+    if(progress[i].roadmapId.toString() === roadmapId.toString()) {
+      return progress[i]
+    }
+  }
+}
+
 export const getRoadmapByUserId = async (req, res) => {
   try {
     const user = await User.findById(req.user._id).populate(
@@ -71,9 +80,17 @@ export const getRoadmapByUserId = async (req, res) => {
       "name _id bannerImage"
     );
 
+    let data = []
+    for(let i = 0; i < user.enrolledRoadmaps.length; i++) {
+      const roadmap = user.enrolledRoadmaps[i];
+      const progress = getProgressByRoadmapId(user.progress, roadmap._id);
+      const sectionsDone = progress ? progress.completedId.length : 0;
+      data.push({roadmapId: roadmap._id, progress: sectionsDone});   
+    }
+
     return res
       .status(200)
-      .json({ success: true, roadmaps: user.enrolledRoadmaps });
+      .json({ success: true, roadmaps: user.enrolledRoadmaps, progress: data });
   } catch (e) {
     console.error(e);
     return res
