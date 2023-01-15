@@ -12,25 +12,22 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
   const [showCompletedMsg, setShowCompletedMsg] = useState(false);
   const { id } = useParams();
 
-  const toggleCompleted = async () => {
-    setChecked((prev) => !prev);
+  const postProgress = async () => {
+    await api.post(
+      "progress",
+      { resourceId: resource._id, roadmapId: id },
+      {
+        headers: { Authorization: user.accessToken },
+      }
+    );
+    setShowCompletedMsg(true);
   };
 
-  useEffect(() => {
-    const postProgress = async () => {
-      await api.post(
-        "progress",
-        { resourceId: resource._id, roadmapId: id },
-        {
-          headers: { Authorization: user.accessToken },
-        }
-      );
-      setShowCompletedMsg(true);
-    };
-    if (checked) {
-      postProgress();
-    }
-  }, [checked, user, id, resource]);
+  const toggleCompleted = async () => {
+    setChecked(true);
+    postProgress();
+  };
+
 
   if (checked) {
     return (

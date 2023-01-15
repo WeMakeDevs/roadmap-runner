@@ -10,12 +10,16 @@ const Roadmap = () => {
   const { id } = useParams();
   const { user } = useAuthContext();
   const [roadmap, setRoadmap] = useState();
+  const [completedSections, setCompletedSections] = useState(0);
+  const [progress, setProgress] = useState()
 
   useEffect(() => {
     async function fetchRoadmaps() {
-      const res = await api.get(`roadmap/${id}`, {
+      const res = await api.get(`roadmapByUserId/${id}`, {
         headers: { Authorization: user.accessToken },
       });
+      setProgress(res.data.progress?.completedId ? res.data.progress.completedId : [])
+      setCompletedSections(res.data.completedSections);
       setRoadmap(res.data.roadmap);
     }
 
@@ -28,13 +32,13 @@ const Roadmap = () => {
         <div>
           <p style={{ color: "var(--clr-secondary)" }}>My Roadmap</p>
           <h1>{roadmap?.name}</h1>
-          <p className="progress">50% completed</p>
+          <p className="progress">{completedSections} sections completed</p>
 
           <div className="roadmap">
             {roadmap &&
               roadmap.sections &&
               roadmap.sections.map((section) => (
-                <Section key={section._id} section={section} roadmapName={roadmap?.name} />
+                <Section key={section._id} section={section} roadmapName={roadmap?.name} progress={progress} />
               ))}
           </div>
         </div>

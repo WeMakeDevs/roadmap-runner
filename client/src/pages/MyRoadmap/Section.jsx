@@ -1,7 +1,7 @@
 import React from "react";
 import SubSection from "./SubSection";
 
-const Section = ({ section, roadmapName }) => {
+const Section = ({ section, roadmapName, progress }) => {
   return (
     <div className="section">
       <div className="section-title">
@@ -9,7 +9,7 @@ const Section = ({ section, roadmapName }) => {
       </div>
       <div>
         {section.subsections.map((subsection) => (
-          <SubSection key={subsection._id} subsection={subsection} roadmapName={roadmapName} />
+          <SubSection key={subsection._id} subsection={subsection} roadmapName={roadmapName} progress={progress} />
         ))}
       </div>
     </div>

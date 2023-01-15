@@ -98,3 +98,28 @@ export const getRoadmapByUserId = async (req, res) => {
       .json({ success: false, message: "An internal server error occured" });
   }
 };
+
+export const getRoadmapByRoadmapIdUserId = async (req, res) => {
+  const { id } = req.params;
+
+  if (!id) {
+    return res
+      .status(400)
+      .json({ success: false, message: "Roadmap id is required" });
+  }
+
+  try {
+    const roadmap = await Roadmap.findById(id);
+
+    const progress = getProgressByRoadmapId(req.user.progress, roadmap._id);    
+
+    const completedSections = progress ? progress.completedId.length : 0
+
+    return res.status(200).json({ success: true, roadmap, progress, completedSections });
+  } catch (e) {
+    console.error(e);
+    return res
+      .status(500)
+      .json({ success: false, message: "An internal server error occured" });
+  }
+};
