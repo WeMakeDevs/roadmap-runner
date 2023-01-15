@@ -21,14 +21,14 @@ const Landing = () => {
     <div className="landing">
       <div className="wrapper">
         <img src={Logo} alt="" className="logo"/>
-        <h1>RoadmapRunner</h1>
+        <h1>Roadmap Runner</h1>
         <p>Navigating the path to success, one roadmap at a time.</p>
         <Link to="/signin">
           Start Learning <i className="fa-solid fa-arrow-right"></i>
         </Link>
       </div>
 
-      <img src={ContriGraph} alt="" />
+      <img src={ContriGraph} alt="" className="graph"/>
 
       <img src={CSSLogo} alt="CSS logo" className="bg-logo css" />
       <img src={HTMLLogo} alt="CSS logo" className="bg-logo html" />
