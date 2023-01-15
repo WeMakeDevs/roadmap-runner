@@ -26,6 +26,7 @@
     
     .sidebar-layout > main {
         width:87%;
+        padding: 1rem;
     }
 
     .sidebar ul {

@@ -34,3 +34,20 @@
 .roadmap-card p {
     color: var(--clr-secondary)
 }
+
+@media (max-width: 1400px) {
+    .roadmaps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 950px) {
+    .roadmaps-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .roadmap-card { 
+        padding: 0.5rem;
+    }
+}
