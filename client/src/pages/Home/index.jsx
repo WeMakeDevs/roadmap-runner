@@ -40,7 +40,7 @@ const Home = () => {
             <section className="progress-card card">
               <img src={LeaderboardIcon} alt="" />
               <h2 className="title">Your Points</h2>
-              <p className="count">{stats?.progressStat}</p>
+              <p className="count">{stats?.progressStat || 0}</p>
             </section>
             <section className="progress-card card">
               <img src={MyRoadmapIcon} alt="" />
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
           <section className="contribution-graph">
             <h2 className="title">Your consistency graph</h2>
-            <ConsistencyGraph />
+            <ConsistencyGraph progress={stats.progress}/>
           </section>
         </div>
         <div className="daily-visit-card">

@@ -119,7 +119,7 @@ export const getLeaderboard = async (req, res) => {
 export const getHomeStats = async (req, res) => {
   try {
     const homeStats = await User.findById(req.user._id).select(
-      "enrolledRoadmaps progressStat"
+      "enrolledRoadmaps progressStat progress"
     );
     return res.status(200).json({ success: true, homeStats });
   } catch (e) {
