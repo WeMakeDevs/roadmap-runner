@@ -2,11 +2,12 @@ import React from "react";
 import "./index.css";
 import SadFace from "../../assets/mood/sadface.svg";
 
-const EmptyPage = ({ message = "Nothing found" }) => {
+const EmptyPage = ({ message = "Nothing found", children }) => {
   return (
     <div className="empty-page">
       <img src={SadFace} alt="" />
       <h1>{message}</h1>
+      {children}
     </div>
   );
 };

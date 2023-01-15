@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from "react";
 import SidebarLayout from "../../components/SidebarLayout";
 import Users from "../../assets/users.png";
-import leaderboardData from "../../data/leaderboard.json";
 import Card from "./Card";
 import "./index.css";
+import api from "../../api";
+import { useAuthContext } from "../../hooks/useAuthContext";
 
 const Leaderboard = () => {
   const [topLearners, setTopLearners] = useState();
+  const [totalLearners, setTotalLearners] = useState(0);
+  const { user } = useAuthContext();
 
   useEffect(() => {
     async function fetchRoadmaps() {
-      setTopLearners(leaderboardData.data.leaderboard);
+      const res = await api.get("leaderboard", {
+        headers: { Authorization: user.accessToken },
+      });
+      setTopLearners(res.data.users);
+      setTotalLearners(res.data.count);
     }
 
     fetchRoadmaps();
-  }, []);
+  }, [user]);
 
   return (
     <SidebarLayout>
@@ -25,10 +32,11 @@ const Leaderboard = () => {
             {topLearners &&
               topLearners.map((topLearner, idx) => (
                 <Card
+                  key={topLearner._id}
                   rank={idx + 1}
                   name={topLearner.name}
-                  profileUrl={topLearner.profileUrl}
-                  totalSections={topLearner.totalSections}
+                  profileUrl={topLearner.displayPicture}
+                  totalSections={topLearner.progressStat}
                 />
               ))}
           </div>
@@ -37,7 +45,7 @@ const Leaderboard = () => {
           <div>
             <img src={Users} alt="" />
             <p className="stats-title">Total Learners</p>
-            <p className="stats-count">10+</p>
+            <p className="stats-count">{totalLearners}</p>
           </div>
         </div>
       </div>

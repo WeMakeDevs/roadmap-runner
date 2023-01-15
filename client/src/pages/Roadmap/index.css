@@ -12,6 +12,16 @@
     font-size: 1.1rem;
 }
 
+
+.already-enrolled-msg {
+    color: var(--clr-green);
+    margin-top: 2rem;
+}
+
+.already-enrolled-msg i {
+    margin-right: 0.5rem;
+}
+
 .roadmap {
     margin-top: 2rem;
     display: flex;

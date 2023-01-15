@@ -9,7 +9,6 @@ export const isAuthorized = async (req, res, next) => {
 
     if (decodedToken) {
       let user = await User.findOne({ email: decodedToken.email });
-      console.log(user);
       req.user = user;
       return next();
     }
