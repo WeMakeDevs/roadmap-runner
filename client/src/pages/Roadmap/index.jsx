@@ -8,22 +8,26 @@ import "./index.css";
 import Modal from "../../components/Modal";
 import Confetti from "../../components/Confetti";
 import { Link } from "react-router-dom";
+import Loader from "../../components/Loader";
 
 const Roadmap = () => {
   const { id } = useParams();
   const { user } = useAuthContext();
   const [roadmap, setRoadmap] = useState();
+  const [loading, setLoading] = useState(false);
   const [enrollLoading, setEnrollLoading] = useState(false);
   const [enrolled, setEnrolled] = useState(false);
   const [showEnrolledSucces, setShowEnrolledSuccess] = useState(false);
 
   useEffect(() => {
     async function fetchRoadmaps() {
+      setLoading(true)
       const res = await api.get(`roadmap/${id}`, {
         headers: { Authorization: user.accessToken },
       });
       setEnrolled(res.data.isAlreadyEnrolled)
       setRoadmap(res.data.roadmap);
+      setLoading(false)
     }
 
     fetchRoadmaps();
@@ -47,6 +51,12 @@ const Roadmap = () => {
       setEnrollLoading(false)
     }
   };
+
+  if(loading) {
+    return <SidebarLayout>
+      <Loader/>
+    </SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
