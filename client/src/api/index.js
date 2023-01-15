@@ -1,5 +1,5 @@
-import axios from 'axios';
+import axios from "axios";
 
 export default axios.create({
-  baseURL: `http://localhost:8001/api/v1/`
+  baseURL: `https://roadmap-runner-server.onrender.com/api/v1`,
 });
