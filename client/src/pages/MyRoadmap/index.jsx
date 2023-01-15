@@ -5,19 +5,23 @@ import Section from "./Section";
 import api from "../../api";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
+import Loader from "../../components/Loader";
 
 const Roadmap = () => {
   const { id } = useParams();
   const { user } = useAuthContext();
   const [roadmap, setRoadmap] = useState();
   const [completedSections, setCompletedSections] = useState(0);
+  const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState()
 
   useEffect(() => {
     async function fetchRoadmaps() {
+      setLoading(true);
       const res = await api.get(`roadmapByUserId/${id}`, {
         headers: { Authorization: user.accessToken },
       });
+      setLoading(false);
       setProgress(res.data.progress?.completedId ? res.data.progress.completedId : [])
       setCompletedSections(res.data.completedSections);
       setRoadmap(res.data.roadmap);
@@ -25,6 +29,10 @@ const Roadmap = () => {
 
     fetchRoadmaps();
   }, [id, user]);
+
+  if(loading) {
+    return <SidebarLayout><Loader /></SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
