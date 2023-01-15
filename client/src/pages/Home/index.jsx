@@ -3,15 +3,21 @@ import SidebarLayout from "../../components/SidebarLayout";
 import ConsistencyGraph from "./ConsistencyGraph";
 import SmileyFace from "../../assets/mood/smileyface.svg";
 import "./index.css";
-import { LeaderboardIcon, MyRoadmapIcon, RoadmapIcon } from "../../assets/sidebar";
+import {
+  LeaderboardIcon,
+  MyRoadmapIcon,
+  RoadmapIcon,
+} from "../../assets/sidebar";
+import ShareTweet from "../../components/TweetShare";
 
-const Home = ({loading = true}) => {
+const Home = ({ loading = true }) => {
 
   return (
     <SidebarLayout>
       <div className="home-container">
         <div>
           <h1>Hello Siddhi 👋</h1>
+          <ShareTweet />
           <div className="stats-card">
             <section className="roadmaps-card card">
               <img src={RoadmapIcon} alt="" />
@@ -19,7 +25,7 @@ const Home = ({loading = true}) => {
               <p className="count">2</p>
             </section>
             <section className="progress-card card">
-            <img src={LeaderboardIcon} alt="" />
+              <img src={LeaderboardIcon} alt="" />
               <h2 className="title">Your Progress</h2>
               <p className="count">10%</p>
             </section>

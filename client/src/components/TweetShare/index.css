@@ -1,0 +1,13 @@
+.share-tweet {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: rgb(21, 152, 239);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+    font-size: 0.9rem;
+}
+
+.share-tweet i {
+    margin-left: 0.65rem;
+    font-size: 1rem;
+}
