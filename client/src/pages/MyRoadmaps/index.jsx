@@ -4,6 +4,8 @@ import Card from "./Card";
 import api from "../../api";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
+import EmptyPage from "../../components/EmptyPage";
+import { Link } from "react-router-dom";
 
 const Roadmaps = () => {
   const { user } = useAuthContext();
@@ -14,7 +16,6 @@ const Roadmaps = () => {
       const res = await api.get("roadmapsByUserId", {
         headers: { Authorization: user.accessToken },
       });
-      console.log(res.data.progress)
       setRoadmaps(res.data.roadmaps.map(roadmap => {
         
         const progress = res.data.progress.filter(progress => progress.roadmapId === roadmap._id)[0].progress
@@ -24,6 +25,14 @@ const Roadmaps = () => {
 
     fetchRoadmaps();
   }, [user]);
+
+  if(!roadmaps || roadmaps.length === 0) {
+    return <SidebarLayout>
+      <EmptyPage message="You haven't enrolled to any roadmaps"> 
+        <Link to="/roadmaps" className="empty-cta">Explore Roadmaps</Link>  
+      </EmptyPage>
+    </SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
