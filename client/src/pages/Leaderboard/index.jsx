@@ -5,23 +5,31 @@ import Card from "./Card";
 import "./index.css";
 import api from "../../api";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import Loader from "../../components/Loader";
 
 const Leaderboard = () => {
   const [topLearners, setTopLearners] = useState();
   const [totalLearners, setTotalLearners] = useState(0);
+  const [loading, setLoading] = useState(false);
   const { user } = useAuthContext();
 
   useEffect(() => {
     async function fetchRoadmaps() {
+      setLoading(true);
       const res = await api.get("leaderboard", {
         headers: { Authorization: user.accessToken },
       });
+      setLoading(false);
       setTopLearners(res.data.users);
       setTotalLearners(res.data.count);
     }
 
     fetchRoadmaps();
   }, [user]);
+
+  if(loading) {
+    return <SidebarLayout><Loader /></SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
