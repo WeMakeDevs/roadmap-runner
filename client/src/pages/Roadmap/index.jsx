@@ -117,7 +117,7 @@ const Roadmap = () => {
         <Modal closeModal={() => setShowEnrolledSuccess(false)}>
           <h2>Success!</h2>
           <p>You have successfully enrolled into the roadmap!</p>
-          <Link to={`/myroadmaps`}>Start Learning</Link>
+          <Link to={`/myroadmaps/${id}`}>Start Learning</Link>
         </Modal>
         </>
       }
