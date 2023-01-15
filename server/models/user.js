@@ -36,7 +36,10 @@ const userSchema = new mongoose.Schema({
     },
   ],
   progressStat: Number,
-  displayPicture: String,
+  displayPicture: {
+    type: String, 
+    default: "https://avatars.githubusercontent.com/u/49398178?v=4",
+  },
 });
 
 export default mongoose.model("User", userSchema);
