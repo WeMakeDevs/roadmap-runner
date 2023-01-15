@@ -4,21 +4,29 @@ import Card from "./Card";
 import api from "../../api";
 import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
+import Loader from "../../components/Loader";
 
 const Roadmaps = () => {
   const [roadmaps, setRoadmaps] = useState();
+  const [loading, setLoading] = useState(false);
   const { user } = useAuthContext();
 
   useEffect(() => {
     async function fetchRoadmaps() {
+      setLoading(true);
       const res = await api.get("roadmap", {
         headers: { Authorization: user.accessToken },
       });
+      setLoading(false);
       setRoadmaps(res.data.roadmaps);
     }
 
     fetchRoadmaps();
   }, [user]);
+
+  if(loading) {
+    return <SidebarLayout><Loader /></SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
