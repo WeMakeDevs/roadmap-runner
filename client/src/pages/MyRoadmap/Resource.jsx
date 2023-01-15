@@ -40,7 +40,7 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
             </label>
             {resource.id} {resource.title}
           </div>
-          <a href={resource.url} target="_blank" rel="noreferrer">
+          <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
             <i className="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
@@ -78,7 +78,7 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
         </label>
         {resource.id} {resource.title}
       </div>
-      <a href={resource.url} target="_blank" rel="noreferrer">
+      <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
         <i className="fa-solid fa-arrow-up-right-from-square"></i>
       </a>
     </div>
