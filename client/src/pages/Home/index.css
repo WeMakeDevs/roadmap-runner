@@ -12,6 +12,7 @@
     align-items: center;
     height: 100%;
     border-left: 1px solid rgb(163, 168, 195, .2);
+    font-size: 1.25rem;
 }
 
 .home-container>div:nth-child(1) {
