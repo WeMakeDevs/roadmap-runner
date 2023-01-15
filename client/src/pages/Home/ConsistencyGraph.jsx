@@ -7,7 +7,7 @@ const ConsistencyGraph = ({ progress = [] }) => {
   useEffect(() => {
     const data = getProgressByDayNumber(progress);
     setLevelsData(data);
-  }, [progress]);
+  }, []);
 
   useEffect(() => {
     if (levelsData) {

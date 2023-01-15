@@ -4,15 +4,32 @@
 }
 
 .sidebar-layout > div {
-    width: 280px;
+    width: 20%;
     border-right: 1px solid rgb(163, 168, 195, .2);
 }
 
 .sidebar-layout > main {
-    flex-grow: 1;
+    width: 80%;
     padding: 2rem;
 }
 
 .sidebar-layout > main h1 {
     margin-top: 1rem;
+}
+
+
+@media (max-width: 1170px) {
+ 
+    .sidebar-layout > div {
+        min-width: 13%;
+    }
+    
+    .sidebar-layout > main {
+        width:87%;
+    }
+
+    .sidebar ul {
+        margin: 0;
+    }
+    
 }

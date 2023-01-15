@@ -8,10 +8,9 @@
 }
 
 .home-container>div:nth-child(2) {
-    min-width: 30%;
+    width: 30%;
     text-align: center;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100%;
     border-left: 1px solid rgb(163, 168, 195, .2);
@@ -19,7 +18,7 @@
 }
 
 .home-container>div:nth-child(1) {
-    flex-grow: 1;
+    width: 100%;
 }
 
 .home-container .stats-card {
@@ -48,6 +47,7 @@
 .home-container .stats-card img {
     width: 3rem;
 }
+
 
 :root {
     --square-size: 15px;
@@ -150,4 +150,37 @@
 
 .squares li[data-level="3"] {
     background-color: #4c1d95;
+}
+
+@media (max-width: 1400px) {
+    .home-container>div:nth-child(2) {
+        display: none;
+    }
+
+    .graph {
+        max-width: 91%;
+    }
+    
+    .home-container>div:nth-child(1) {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 910px) {
+    .home-container .stats-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin: 2rem 0;
+        gap: 1rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    
+    .graph {
+        overflow-x: scroll;
+    }
+ 
+    
 }

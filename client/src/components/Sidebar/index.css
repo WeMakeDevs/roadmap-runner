@@ -47,3 +47,14 @@
     border: none;
     outline: none;
 }
+
+@media (max-width: 1170px) {
+ 
+    .sidebar li span {
+        display: none;
+    }
+
+    .sidebar .link-wrapper img {
+        margin-right: 0;
+    }   
+}

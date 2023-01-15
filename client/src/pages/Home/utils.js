@@ -43,7 +43,5 @@ export function getProgressByDayNumber(progress) {
     }
   }
 
-  levelsData[14] = 1;
-
   return levelsData;
 }

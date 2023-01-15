@@ -18,29 +18,37 @@ const Sidebar = () => {
       <div className="link-wrapper">
         <ul>
           <li>
-            {/* <i className="fa-solid fa-house"></i> */}
-            <img src={HomeIcon} alt="" />
-            <Link to="/home">Home</Link>
+            <Link to="/home">
+              {/* <i className="fa-solid fa-house"></i> */}
+              <img src={HomeIcon} alt="" />
+              <span>Home</span>
+            </Link>
           </li>
           <li>
-            {/* <i className="fa-solid fa-map"></i> */}
-            <img src={RoadmapIcon} alt="" />
-            <Link to="/roadmaps">Roadmaps</Link>
+            <Link to="/roadmaps">
+              {/* <i className="fa-solid fa-map"></i> */}
+              <img src={RoadmapIcon} alt="" />
+              <span>Roadmaps</span>
+            </Link>
           </li>
           <li>
-            {/* <i className="fa-solid fa-map-location-dot"></i> */}
-            <img src={MyRoadmapIcon} alt="" />
-            <Link to="/myroadmaps">My Roadmaps</Link>
+            <Link to="/myroadmaps">
+              {/* <i className="fa-solid fa-map-location-dot"></i> */}
+              <img src={MyRoadmapIcon} alt="" />
+              <span>My Roadmaps</span>
+            </Link>
           </li>
           <li>
-            {/* <i className="fa-solid fa-medal"></i> */}
-            <img src={LeaderboardIcon} alt="" />
-            <Link to="/leaderboard">Leaderboard</Link>
+            <Link to="/leaderboard">
+              {/* <i className="fa-solid fa-medal"></i> */}
+              <img src={LeaderboardIcon} alt="" />
+              <span>Leaderboard</span>
+            </Link>
           </li>
           <li>
             {/* <i className="fa-solid fa-user"></i> */}
             <img src={SignoutIcon} alt="" />
-            <button onClick={logout}>Sign out</button>
+            <button onClick={logout}><span>Sign out</span></button>
           </li>
         </ul>
       </div>
