@@ -3,6 +3,9 @@
     height: 100%
 }
 
+.home-container h1 {
+    margin-bottom: 1rem;
+}
 
 .home-container>div:nth-child(2) {
     min-width: 30%;
@@ -26,7 +29,7 @@
     padding-left: 0;
     gap: 1rem;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .home-container .stats-card .card {
