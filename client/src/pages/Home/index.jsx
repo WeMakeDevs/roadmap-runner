@@ -10,21 +10,29 @@ import {
 } from "../../assets/sidebar";
 import api from "../../api";
 import { useAuthContext } from "../../hooks/useAuthContext";
+import Loader from "../../components/Loader";
 
 const Home = () => {
   const [stats, setStats] = useState({});
+  const [loading, setLoading] = useState(false);
   const { user } = useAuthContext();
 
   useEffect(() => {
     const fetchHomeStats = async () => {
+      setLoading(true);
       const res = await api.get("homeStats", {
         headers: { Authorization: user.accessToken },
       });
+      setLoading(false);
       setStats(res.data.homeStats);
     };
 
     fetchHomeStats();
   }, [user]);
+
+  if(loading) {
+    return <SidebarLayout><Loader /></SidebarLayout>
+  }
 
   return (
     <SidebarLayout>
