@@ -4,9 +4,9 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import { useParams } from "react-router";
 import Modal from "../../components/Modal";
 import Confetti from "../../components/Confetti";
-import { Link } from "react-router-dom";
+import TweetShare from "../../components/TweetShare";
 
-const Resource = ({ resource, completed = false }) => {
+const Resource = ({ resource, completed = false, roadmapName }) => {
   const { user } = useAuthContext();
   const [checked, setChecked] = useState(completed);
   const [showCompletedMsg, setShowCompletedMsg] = useState(false);
@@ -53,7 +53,7 @@ const Resource = ({ resource, completed = false }) => {
             <Modal closeModal={() => setShowCompletedMsg(false)}>
               <h2>Success!</h2>
               <p>You have completed one more section! Share your progress 🤗</p>
-              <Link to={`/myroadmaps`}>Share</Link>
+              <TweetShare shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey! #RoadmapRunner`} />
             </Modal>
           </>
         )}
@@ -91,7 +91,7 @@ const Resource = ({ resource, completed = false }) => {
           <Modal closeModal={() => setShowCompletedMsg(false)}>
             <h2>Success!</h2>
             <p>You have completed one more section! Share your progress 🤗</p>
-            <Link to={`/myroadmaps`}>Share</Link>
+            <TweetShare shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey!  #RoadmapRunner`} />
           </Modal>
         </>
       )}

@@ -1,7 +1,7 @@
 import React from "react";
 import Resource from "./Resource";
 
-const SubSection = ({ subsection }) => {
+const SubSection = ({ subsection, roadmapName }) => {
   return (
     <div className="subsection">
       {subsection.title !== "" && (
@@ -12,7 +12,7 @@ const SubSection = ({ subsection }) => {
       )}
       <div>
         {subsection.resources.map((resource) => (
-          <Resource key={resource._id} resource={resource} />
+          <Resource key={resource._id} resource={resource} roadmapName={roadmapName} />
         ))}
       </div>
     </div>

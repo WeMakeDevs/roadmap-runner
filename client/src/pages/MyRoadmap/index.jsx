@@ -34,7 +34,7 @@ const Roadmap = () => {
             {roadmap &&
               roadmap.sections &&
               roadmap.sections.map((section) => (
-                <Section key={section._id} section={section} />
+                <Section key={section._id} section={section} roadmapName={roadmap?.name} />
               ))}
           </div>
         </div>

@@ -130,8 +130,9 @@
 }
 
 .modal a {
-    background-color: var(--clr-green);
     padding: 0.5rem 1rem;
     border-radius: 3px;
     font-size: 0.9rem;
+    border-radius: 5px;
+    background: rgb(21, 152, 239);
 }
