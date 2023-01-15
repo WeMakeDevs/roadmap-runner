@@ -6,16 +6,20 @@ import { useAuthContext } from "../../hooks/useAuthContext";
 import "./index.css";
 import EmptyPage from "../../components/EmptyPage";
 import { Link } from "react-router-dom";
+import Loader from "../../components/Loader";
 
 const Roadmaps = () => {
   const { user } = useAuthContext();
   const [roadmaps, setRoadmaps] = useState();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fetchRoadmaps() {
+      setLoading(true);
       const res = await api.get("roadmapsByUserId", {
         headers: { Authorization: user.accessToken },
       });
+      setLoading(false);
       setRoadmaps(res.data.roadmaps.map(roadmap => {
         
         const progress = res.data.progress.filter(progress => progress.roadmapId === roadmap._id)[0].progress
@@ -25,6 +29,11 @@ const Roadmaps = () => {
 
     fetchRoadmaps();
   }, [user]);
+
+
+  if(loading) {
+    return <SidebarLayout><Loader /></SidebarLayout>
+  }
 
   if(!roadmaps || roadmaps.length === 0) {
     return <SidebarLayout>
