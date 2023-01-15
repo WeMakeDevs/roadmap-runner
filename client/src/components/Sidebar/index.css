@@ -17,7 +17,7 @@
 }
 
 .sidebar .link-wrapper {
-    position: fixed;
+    position: absolute;
     top: 50%;
     transform: translateY(-70%);
 }
