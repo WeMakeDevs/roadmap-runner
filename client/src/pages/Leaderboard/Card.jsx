@@ -40,7 +40,7 @@ function getRankImage(rank) {
   }
 }
 
-const Card = ({ rank, name, profileUrl, totalSections }) => {
+const Card = ({ rank, name, profileUrl, totalSections=0 }) => {
   return (
     <div className="leaderboard-card card">
       <div>
@@ -52,7 +52,7 @@ const Card = ({ rank, name, profileUrl, totalSections }) => {
         </div>
         <div>{name}</div>
       </div>
-      <div className="points">Points: {totalSections}</div>
+      <div className="points">Points: {totalSections || 0}</div>
     </div>
   );
 };
