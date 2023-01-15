@@ -7,7 +7,6 @@ Navigating the path to success, one roadmap at a time.
 ## Features ✨
 ### Explore Roadmaps
 ![image](https://user-images.githubusercontent.com/80971056/212525793-7ed13a02-6c4b-47c3-98c5-8d38d6a14b19.png)
-![image](https://user-images.githubusercontent.com/80971056/212525801-8f3f0e09-2dea-4cb2-893c-fb857769f08b.png)
 
 ### Enroll to Roadmaps
 ![enroll](https://user-images.githubusercontent.com/80971056/212525886-17fbe4ac-5a50-4710-9559-f0bde80575a1.gif)
