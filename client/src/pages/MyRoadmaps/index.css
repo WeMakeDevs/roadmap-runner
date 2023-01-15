@@ -39,3 +39,12 @@
     font-family: var(--ff-mono);
     color: var(--clr-green)
 }
+
+.empty-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background: var(--clr-primary);
+    box-shadow: rgb(0 0 0 / 8%) 0px 8px 28px;
+}

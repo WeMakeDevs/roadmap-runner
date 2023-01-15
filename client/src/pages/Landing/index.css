@@ -90,13 +90,13 @@
 }
 
 .landing .bg-logo.react {
-    bottom: 5%;
-    right: 40%;
+    top: 50%;
+    right: 5%;
 }
 
 .landing .bg-logo.redux {
-    bottom: 5%;
-    left: 30%;
+    bottom: 50%;
+    left: 5%;
 }
 
 .landing .bg-logo.git {

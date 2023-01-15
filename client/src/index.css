@@ -192,3 +192,7 @@ a {
 .radio-container .form-control[type="radio"]:checked~.radio-custom:after {
   display: block;
 }
+
+button:disabled {
+  opacity: 0.5;
+}
