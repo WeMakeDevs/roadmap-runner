@@ -60,29 +60,27 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
 
   return (
     <>
-    <div
-      className="resource card"
-      style={{ cursor: "pointer" }}
-      onClick={toggleCompleted}
-    >
-      <div>
-        <label className="checkbox-container tooltip">
-          <input
-            type="checkbox"
-            className="form-control"
-            checked={checked}
-            onChange={toggleCompleted}
-          />
-          <span className="checkbox-custom"></span>
-          {!checked && <span className="tooltiptext">Mark as done</span>}
-        </label>
-        {resource.id} {resource.title}
+      <div
+        className="resource card"
+      >
+        <div>
+          <label className="checkbox-container tooltip">
+            <input
+              type="checkbox"
+              className="form-control"
+              checked={checked}
+              onChange={toggleCompleted}
+            />
+            <span className="checkbox-custom"></span>
+            {!checked && <span className="tooltiptext">Mark as done</span>}
+          </label>
+          {resource.id} {resource.title}
+        </div>
+        <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
+          <i className="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
       </div>
-      <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
-        <i className="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
-    </div>
-    {showCompletedMsg && (
+      {showCompletedMsg && (
         <>
           <Confetti />
           <Modal closeModal={() => setShowCompletedMsg(false)}>
