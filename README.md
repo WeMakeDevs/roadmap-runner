@@ -38,3 +38,17 @@ With all these features, Roadmap Runner is a comprehensive solution for anyone l
 ### Proudly share your progress
 ![shareprogress](https://user-images.githubusercontent.com/80971056/212525920-e68493da-88b8-4b7f-b9ed-fc62e5599a60.gif)
 
+
+# Contribute
+
+We welcome contributions in our community.<br>
+Before making a contribution, check the <a href="https://github.com/WeMakeDevs/roadmap-runner/blob/main/CONTRIBUTING.md">Contribution guide.</a> for guidelines and installation steps
+
+# Code of Conduct
+
+Check out the <a href="https://github.com/WeMakeDevs/roadmap-runner/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> to know an inclusive environment that respects all contributions.
+
+# License
+
+This Community is <a href="https://github.com/WeMakeDevs/roadmap-runner/blob/main/LICENSE">Licensed</a> under MIT license.
+
