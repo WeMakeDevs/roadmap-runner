@@ -13,4 +13,3 @@ export const connectWithDb = () => {
       process.exit(1);
     });
 };
-
