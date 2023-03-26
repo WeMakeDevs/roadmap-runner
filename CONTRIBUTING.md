@@ -4,7 +4,16 @@ Thank you for considering and taking the time to contribute! Product focuses on 
 
 The following are guidelines for contributing to this project.
 
+## Prerequisites:
+Before starting, you need to install the following on your computer.
+- Node.js
+- Git
+- npm
+- MongoDB
+
+
 ## Installation
+
 1. Fork the repo
 2. Clone the repository
 
