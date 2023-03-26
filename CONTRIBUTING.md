@@ -68,6 +68,6 @@ Then, please [create a new issue in the GitHub repository][new-issue] describing
 
 Be sure to include as much detail as possible including step-by-step descriptions, specific examples, screenshots or mockups, and reasoning for why the enhancement might be worthwhile.
 
-[new-issue]: https://github.com/wemakedevs/roadmap-runner/issues/new/choose
-[github-repo]: https://github.com/wemakedevs/roadmap-runner/
-[issues-list]: https://github.com/wemakedevs/roadmap-runner/issues
+[new-issue]: https://github.com/siddhigate/roadmap-runner/issues/new/choose
+[github-repo]: https://github.com/siddhigate/roadmap-runner/
+[issues-list]: https://github.com/siddhigate/roadmap-runner/issues
