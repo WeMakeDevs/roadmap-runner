@@ -28,7 +28,6 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
     postProgress();
   };
 
-
   if (checked) {
     return (
       <>
@@ -40,7 +39,12 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
             </label>
             {resource.id} {resource.title}
           </div>
-          <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
+          <a
+            href={resource.url}
+            target="_blank"
+            rel="noreferrer"
+            onClick={(e) => e.stopPropagation()}
+          >
             <i className="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
         </div>
@@ -50,7 +54,9 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
             <Modal closeModal={() => setShowCompletedMsg(false)}>
               <h2>Success!</h2>
               <p>You have completed one more section! Share your progress 🤗</p>
-              <TweetShare shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey! #RoadmapRunner`} />
+              <TweetShare
+                shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey! #RoadmapRunner`}
+              />
             </Modal>
           </>
         )}
@@ -60,9 +66,7 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
 
   return (
     <>
-      <div
-        className="resource card"
-      >
+      <div className="resource card">
         <div>
           <label className="checkbox-container tooltip">
             <input
@@ -76,7 +80,12 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
           </label>
           {resource.id} {resource.title}
         </div>
-        <a href={resource.url} target="_blank" rel="noreferrer" onClick={e => e.stopPropagation()}>
+        <a
+          href={resource.url}
+          target="_blank"
+          rel="noreferrer"
+          onClick={(e) => e.stopPropagation()}
+        >
           <i className="fa-solid fa-arrow-up-right-from-square"></i>
         </a>
       </div>
@@ -86,7 +95,9 @@ const Resource = ({ resource, completed = false, roadmapName }) => {
           <Modal closeModal={() => setShowCompletedMsg(false)}>
             <h2>Success!</h2>
             <p>You have completed one more section! Share your progress 🤗</p>
-            <TweetShare shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey!  #RoadmapRunner`} />
+            <TweetShare
+              shareText={`Hey there👋 I completed a new section ${resource.id} ${resource.title} from the ${roadmapName} roadmap! Join my journey!  #RoadmapRunner`}
+            />
           </Modal>
         </>
       )}

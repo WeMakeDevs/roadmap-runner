@@ -125,4 +125,4 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-server/config/serviceAccountKey.json
+/server/src/config/serviceAccountKey.json

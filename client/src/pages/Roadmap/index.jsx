@@ -21,20 +21,20 @@ const Roadmap = () => {
 
   useEffect(() => {
     async function fetchRoadmaps() {
-      setLoading(true)
+      setLoading(true);
       const res = await api.get(`roadmap/${id}`, {
         headers: { Authorization: user.accessToken },
       });
-      setEnrolled(res.data.isAlreadyEnrolled)
+      setEnrolled(res.data.isAlreadyEnrolled);
       setRoadmap(res.data.roadmap);
-      setLoading(false)
+      setLoading(false);
     }
 
     fetchRoadmaps();
   }, [user, id]);
 
   const handleEnroll = async () => {
-    setEnrollLoading(true)
+    setEnrollLoading(true);
     try {
       await api.post(
         "enroll",
@@ -42,20 +42,21 @@ const Roadmap = () => {
         { headers: { Authorization: user.accessToken } }
       );
 
-      setEnrolled(true)
-      setShowEnrolledSuccess(true)
-      
+      setEnrolled(true);
+      setShowEnrolledSuccess(true);
     } catch (error) {
       console.log(error);
     } finally {
-      setEnrollLoading(false)
+      setEnrollLoading(false);
     }
   };
 
-  if(loading) {
-    return <SidebarLayout>
-      <Loader/>
-    </SidebarLayout>
+  if (loading) {
+    return (
+      <SidebarLayout>
+        <Loader />
+      </SidebarLayout>
+    );
   }
 
   return (
@@ -111,16 +112,16 @@ const Roadmap = () => {
         </div>
       </div>
 
-      {
-        showEnrolledSucces && <>
-          <Confetti/>
-        <Modal closeModal={() => setShowEnrolledSuccess(false)}>
-          <h2>Success!</h2>
-          <p>You have successfully enrolled into the roadmap!</p>
-          <Link to={`/myroadmaps/${id}`}>Start Learning</Link>
-        </Modal>
+      {showEnrolledSucces && (
+        <>
+          <Confetti />
+          <Modal closeModal={() => setShowEnrolledSuccess(false)}>
+            <h2>Success!</h2>
+            <p>You have successfully enrolled into the roadmap!</p>
+            <Link to={`/myroadmaps/${id}`}>Start Learning</Link>
+          </Modal>
         </>
-      }
+      )}
     </SidebarLayout>
   );
 };

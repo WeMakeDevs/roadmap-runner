@@ -9,7 +9,12 @@ const Section = ({ section, roadmapName, progress }) => {
       </div>
       <div>
         {section.subsections.map((subsection) => (
-          <SubSection key={subsection._id} subsection={subsection} roadmapName={roadmapName} progress={progress} />
+          <SubSection
+            key={subsection._id}
+            subsection={subsection}
+            roadmapName={roadmapName}
+            progress={progress}
+          />
         ))}
       </div>
     </div>

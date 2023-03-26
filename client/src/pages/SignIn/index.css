@@ -1,60 +1,59 @@
 .signin {
-    min-height: calc(90vh - 3.5rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  min-height: calc(90vh - 3.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .signin .wrapper {
-    text-align: center;
-    padding: 2rem 1rem;
-    min-width: 400px;
-    margin: auto;
+  text-align: center;
+  padding: 2rem 1rem;
+  min-width: 400px;
+  margin: auto;
 }
 
 .signin .wrapper .logo {
-    width: 4rem;
+  width: 4rem;
 }
 
 .signin .wrapper h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .signin .wrapper p {
-    font-family: var(--ff-mono);
-    font-size: 1.1rem;
+  font-family: var(--ff-mono);
+  font-size: 1.1rem;
 }
 
 .signin .wrapper button {
-    margin-top: 2rem;
-    border: 1px solid gray;
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    background-color: transparent;
-    color: white;
-    display: flex;
-    align-items: center;
-    margin: 2rem auto 0 auto;
-    gap: 1rem
+  margin-top: 2rem;
+  border: 1px solid gray;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  gap: 1rem;
 }
 
 .signin .wrapper button img {
-    width: 1.25rem;
-    display: block;
+  width: 1.25rem;
+  display: block;
 }
 
 .signin .button .logo-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 400px) {
-    .signin .wrapper {
-        min-width: 100px;
-        max-width: 400px;
-        margin: 1rem;
-    }
-    
+  .signin .wrapper {
+    min-width: 100px;
+    max-width: 400px;
+    margin: 1rem;
+  }
 }

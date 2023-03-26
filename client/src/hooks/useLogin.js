@@ -27,7 +27,10 @@ export const useLogin = () => {
       const apiRes = await api.post("signup", userBody);
 
       // dispatch login action
-      dispatch({ type: "LOGIN", payload: { id: apiRes.data.user._id, ...res.user } });
+      dispatch({
+        type: "LOGIN",
+        payload: { id: apiRes.data.user._id, ...res.user },
+      });
 
       if (!isCancelled) {
         setIsPending(false);

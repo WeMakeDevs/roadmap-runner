@@ -20,27 +20,37 @@ const Roadmaps = () => {
         headers: { Authorization: user.accessToken },
       });
       setLoading(false);
-      setRoadmaps(res.data.roadmaps.map(roadmap => {
-        
-        const progress = res.data.progress.filter(progress => progress.roadmapId === roadmap._id)[0].progress
-        return {...roadmap, progress};
-      }));
+      setRoadmaps(
+        res.data.roadmaps.map((roadmap) => {
+          const progress = res.data.progress.filter(
+            (progress) => progress.roadmapId === roadmap._id
+          )[0].progress;
+          return { ...roadmap, progress };
+        })
+      );
     }
 
     fetchRoadmaps();
   }, [user]);
 
-
-  if(loading) {
-    return <SidebarLayout><Loader /></SidebarLayout>
+  if (loading) {
+    return (
+      <SidebarLayout>
+        <Loader />
+      </SidebarLayout>
+    );
   }
 
-  if(!roadmaps || roadmaps.length === 0) {
-    return <SidebarLayout>
-      <EmptyPage message="You haven't enrolled to any roadmaps"> 
-        <Link to="/roadmaps" className="empty-cta">Explore Roadmaps</Link>  
-      </EmptyPage>
-    </SidebarLayout>
+  if (!roadmaps || roadmaps.length === 0) {
+    return (
+      <SidebarLayout>
+        <EmptyPage message="You haven't enrolled to any roadmaps">
+          <Link to="/roadmaps" className="empty-cta">
+            Explore Roadmaps
+          </Link>
+        </EmptyPage>
+      </SidebarLayout>
+    );
   }
 
   return (

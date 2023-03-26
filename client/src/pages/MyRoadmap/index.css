@@ -1,135 +1,134 @@
 .roadmap-container {
-    display: flex;
-    max-width: 1350px;
+  display: flex;
+  max-width: 1350px;
 }
 
 .roadmap-container > div:nth-child(1) {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .roadmap-enroll-btn {
-    background-color: var(--clr-green);
-    color: white;
-    padding: 0.5rem 3rem;
-    margin-top: 2rem;
-    font-size: 1.1rem;
+  background-color: var(--clr-green);
+  color: white;
+  padding: 0.5rem 3rem;
+  margin-top: 2rem;
+  font-size: 1.1rem;
 }
 
 .roadmap {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-    position: relative;
-    padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+  padding: 1rem;
 }
 
 .roadmap-info {
-    width: 30%;
-    border-left: 1px solid gray;
-    color: var(--clr-secondary);
-    font-size: 0.9rem;
+  width: 30%;
+  border-left: 1px solid gray;
+  color: var(--clr-secondary);
+  font-size: 0.9rem;
 }
 
-.roadmap-info>div {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 1rem
+.roadmap-info > div {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1rem;
 }
 
 .roadmap-info img {
-    width: 100%;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
 }
 
 .section {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .section .section-title {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .subsection {
-    margin: 2rem 1rem;
+  margin: 2rem 1rem;
 }
 
 .subsection .subsection-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .resource {
-    max-width: 650px;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+  max-width: 650px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .resource i {
-    color: var(--clr-primary);
+  color: var(--clr-primary);
 }
 
 .tooltip {
-    position: relative;
+  position: relative;
 }
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
 
-    position: absolute;
-    z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 .progress {
-    color: var(--clr-green);
-    font-family: var(--ff-mono);
-    margin-top: 1rem;
-    font-size: 1.1rem;
+  color: var(--clr-green);
+  font-family: var(--ff-mono);
+  margin-top: 1rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 1250px) {
-    .roadmap-info {
-        display: none;
-    }
+  .roadmap-info {
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
-    .section .section-title {
-        font-size: 1.5rem;
-    }
-    
-    .subsection {
-        margin: 2rem 0.25rem;
-    }
-    
-    .subsection .subsection-title {
-        font-size: 1.25rem;
-    }
-    
-    .resource {
-        max-width: 650px;
-        padding: 0.5rem 1rem;
-        margin: 1rem 0 1rem 0.25rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-    }
-    
+  .section .section-title {
+    font-size: 1.5rem;
+  }
+
+  .subsection {
+    margin: 2rem 0.25rem;
+  }
+
+  .subsection .subsection-title {
+    font-size: 1.25rem;
+  }
+
+  .resource {
+    max-width: 650px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 1rem 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
 }

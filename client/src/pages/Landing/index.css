@@ -1,291 +1,287 @@
 .landing {
-    min-height: calc(90vh - 3.5rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  min-height: calc(90vh - 3.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .landing .wrapper {
-    width: fit-content;
-    text-align: center;
-    min-height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--clr-dark);
+  width: fit-content;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--clr-dark);
 }
 
 .landing .wrapper .logo {
-    width: 5rem;
+  width: 5rem;
 }
 
 .landing h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    /* font-family: var(--ff-mono); */
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  /* font-family: var(--ff-mono); */
 }
 
 .landing p {
-    font-size: 1.25rem;
-    margin-bottom: 1.5rem;
-    font-family: var(--ff-mono);
-    color: var(--clr-secondary);
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-family: var(--ff-mono);
+  color: var(--clr-secondary);
 }
 
 .landing a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: 0.75rem 2.5rem;
-    background-color: var(--clr-primary);
-    color: white;
-    border-radius: 5px;
-    /* font-family: var(--ff-mono); */
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0.75rem 2.5rem;
+  background-color: var(--clr-primary);
+  color: white;
+  border-radius: 5px;
+  /* font-family: var(--ff-mono); */
 }
 
 .landing i {
-    margin-left: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .landing .bg-logo {
-    position: absolute;
-    width: 2.5rem;
-    animation: tilt-n-move-shaking 5s infinite;
-    z-index: -1;
+  position: absolute;
+  width: 2.5rem;
+  animation: tilt-n-move-shaking 5s infinite;
+  z-index: -1;
 }
 
 .landing .graph {
-    max-width: 100%;
-    object-fit: cover;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1200px) {
-    
-    .landing .wrapper {
-        min-height: 60vh;
-        padding: 1rem;
-    }
+  .landing .wrapper {
+    min-height: 60vh;
+    padding: 1rem;
+  }
 
-    .landing .graph {
-        max-width: 100%;
-        height: 30vh;
-        object-fit: cover;
-    }
+  .landing .graph {
+    max-width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 900px) {
-    .landing h1 {
-        font-size: 3rem;
-    }
-    
-    .landing p {
-        font-size: 1.1rem;
-    }
-    
+  .landing h1 {
+    font-size: 3rem;
+  }
+
+  .landing p {
+    font-size: 1.1rem;
+  }
 }
 
 .landing .bg-logo.css {
-    top: 10%;
-    left: 15%;
-    animation: vertical-shaking 5s infinite;
+  top: 10%;
+  left: 15%;
+  animation: vertical-shaking 5s infinite;
 }
 
 .landing .bg-logo.nodejs {
-    top: 28%;
-    right: 5%;
+  top: 28%;
+  right: 5%;
 }
 
 .landing .bg-logo.db {
-    top: 40%;
-    left: 20%;
+  top: 40%;
+  left: 20%;
 }
 
 .landing .bg-logo.ts {
-    top: 40%;
-    right: 20%;
-    animation: vertical-shaking 3s infinite;
+  top: 40%;
+  right: 20%;
+  animation: vertical-shaking 3s infinite;
 }
 
 .landing .bg-logo.mongodb {
-    top: 5%;
-    left: 28%;
-    animation: horizontal-shaking 3s infinite;
+  top: 5%;
+  left: 28%;
+  animation: horizontal-shaking 3s infinite;
 }
 
 .landing .bg-logo.html {
-    top: 10%;
-    right: 15%;
+  top: 10%;
+  right: 15%;
 }
 
 .landing .bg-logo.react {
-    top: 50%;
-    right: 5%;
+  top: 50%;
+  right: 5%;
 }
 
 .landing .bg-logo.redux {
-    bottom: 50%;
-    left: 5%;
+  bottom: 50%;
+  left: 5%;
 }
 
 .landing .bg-logo.git {
-    top: 5%;
-    right: 30%;
+  top: 5%;
+  right: 30%;
 }
 
 .landing .bg-logo.js {
-    top: 25%;
-    left: 5%;
+  top: 25%;
+  left: 5%;
 }
 
-
 @keyframes vertical-shaking {
-    0% {
-        transform: translateY(0)
-    }
+  0% {
+    transform: translateY(0);
+  }
 
-    25% {
-        transform: translateY(5px)
-    }
+  25% {
+    transform: translateY(5px);
+  }
 
-    50% {
-        transform: translateY(-5px)
-    }
+  50% {
+    transform: translateY(-5px);
+  }
 
-    75% {
-        transform: translateY(5px)
-    }
+  75% {
+    transform: translateY(5px);
+  }
 
-    100% {
-        transform: translateY(0)
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes tilt-n-move-shaking {
-    0% {
-        transform: translate(0, 0) rotate(0deg);
-    }
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 
-    25% {
-        transform: translate(5px, 5px) rotate(5deg);
-    }
+  25% {
+    transform: translate(5px, 5px) rotate(5deg);
+  }
 
-    50% {
-        transform: translate(0, 0) rotate(0eg);
-    }
+  50% {
+    transform: translate(0, 0) rotate(0eg);
+  }
 
-    75% {
-        transform: translate(-5px, 5px) rotate(-5deg);
-    }
+  75% {
+    transform: translate(-5px, 5px) rotate(-5deg);
+  }
 
-    100% {
-        transform: translate(0, 0) rotate(0deg);
-    }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
-
 @keyframes horizontal-shaking {
-    0% {
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    25% {
-        transform: translateX(5px)
-    }
+  25% {
+    transform: translateX(5px);
+  }
 
-    50% {
-        transform: translateX(-5px)
-    }
+  50% {
+    transform: translateX(-5px);
+  }
 
-    75% {
-        transform: translateX(5px)
-    }
+  75% {
+    transform: translateX(5px);
+  }
 
-    100% {
-        transform: translateX(0)
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes jump-shaking {
-    0% {
-        transform: translateX(0)
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    25% {
-        transform: translateY(-9px)
-    }
+  25% {
+    transform: translateY(-9px);
+  }
 
-    35% {
-        transform: translateY(-9px) rotate(17deg)
-    }
+  35% {
+    transform: translateY(-9px) rotate(17deg);
+  }
 
-    55% {
-        transform: translateY(-9px) rotate(-17deg)
-    }
+  55% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
 
-    65% {
-        transform: translateY(-9px) rotate(17deg)
-    }
+  65% {
+    transform: translateY(-9px) rotate(17deg);
+  }
 
-    75% {
-        transform: translateY(-9px) rotate(-17deg)
-    }
+  75% {
+    transform: translateY(-9px) rotate(-17deg);
+  }
 
-    100% {
-        transform: translateY(0) rotate(0)
-    }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
 }
 
 @keyframes skew-x-shake {
-    0% {
-        transform: skewX(-15deg);
-    }
+  0% {
+    transform: skewX(-15deg);
+  }
 
-    5% {
-        transform: skewX(15deg);
-    }
+  5% {
+    transform: skewX(15deg);
+  }
 
-    10% {
-        transform: skewX(-15deg);
-    }
+  10% {
+    transform: skewX(-15deg);
+  }
 
-    15% {
-        transform: skewX(15deg);
-    }
+  15% {
+    transform: skewX(15deg);
+  }
 
-    20% {
-        transform: skewX(0deg);
-    }
+  20% {
+    transform: skewX(0deg);
+  }
 
-    100% {
-        transform: skewX(0deg);
-    }
+  100% {
+    transform: skewX(0deg);
+  }
 }
 
 @keyframes skew-y-shake {
-    0% {
-        transform: skewY(-15deg);
-    }
+  0% {
+    transform: skewY(-15deg);
+  }
 
-    5% {
-        transform: skewY(15deg);
-    }
+  5% {
+    transform: skewY(15deg);
+  }
 
-    10% {
-        transform: skewY(-15deg);
-    }
+  10% {
+    transform: skewY(-15deg);
+  }
 
-    15% {
-        transform: skewY(15deg);
-    }
+  15% {
+    transform: skewY(15deg);
+  }
 
-    20% {
-        transform: skewY(0deg);
-    }
+  20% {
+    transform: skewY(0deg);
+  }
 
-    100% {
-        transform: skewY(0deg);
-    }
+  100% {
+    transform: skewY(0deg);
+  }
 }

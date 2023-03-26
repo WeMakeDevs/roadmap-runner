@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
   ],
   progressStat: Number,
   displayPicture: {
-    type: String, 
+    type: String,
     default: "https://avatars.githubusercontent.com/u/49398178?v=4",
   },
 });

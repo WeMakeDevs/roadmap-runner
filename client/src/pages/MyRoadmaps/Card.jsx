@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Card = ({ bannerImage, id, title, tagline, progress=0 }) => {
+const Card = ({ bannerImage, id, title, tagline, progress = 0 }) => {
   return (
     <Link to={`/myroadmaps/${id}`}>
       <section className="roadmap-card">
