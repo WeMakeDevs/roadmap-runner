@@ -24,8 +24,12 @@ const Roadmaps = () => {
     fetchRoadmaps();
   }, [user]);
 
-  if(loading) {
-    return <SidebarLayout><Loader /></SidebarLayout>
+  if (loading) {
+    return (
+      <SidebarLayout>
+        <Loader />
+      </SidebarLayout>
+    );
   }
 
   return (

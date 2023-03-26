@@ -12,7 +12,7 @@ import {
   GitLogo,
   MongoDBLogo,
 } from "../../assets/tech";
-import ContriGraph from "../../assets/contrigraph.svg"
+import ContriGraph from "../../assets/contrigraph.svg";
 import "./index.css";
 import Logo from "../../assets/logo.png";
 
@@ -20,7 +20,7 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="wrapper">
-        <img src={Logo} alt="" className="logo"/>
+        <img src={Logo} alt="" className="logo" />
         <h1>Roadmap Runner</h1>
         <p>Navigating the path to success, one roadmap at a time.</p>
         <Link to="/signin">
@@ -28,7 +28,7 @@ const Landing = () => {
         </Link>
       </div>
 
-      <img src={ContriGraph} alt="" className="graph"/>
+      <img src={ContriGraph} alt="" className="graph" />
 
       <img src={CSSLogo} alt="CSS logo" className="bg-logo css" />
       <img src={HTMLLogo} alt="CSS logo" className="bg-logo html" />

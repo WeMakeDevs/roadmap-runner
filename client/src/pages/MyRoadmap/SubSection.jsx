@@ -12,8 +12,16 @@ const SubSection = ({ subsection, roadmapName, progress }) => {
       )}
       <div>
         {subsection.resources.map((resource) => {
-          const completed = progress.filter(prog => prog.id === resource._id).length > 0;
-          return <Resource key={resource._id} resource={resource} roadmapName={roadmapName} completed={completed} />
+          const completed =
+            progress.filter((prog) => prog.id === resource._id).length > 0;
+          return (
+            <Resource
+              key={resource._id}
+              resource={resource}
+              roadmapName={roadmapName}
+              completed={completed}
+            />
+          );
         })}
       </div>
     </div>

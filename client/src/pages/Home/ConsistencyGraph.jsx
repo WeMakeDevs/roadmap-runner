@@ -21,15 +21,11 @@ const ConsistencyGraph = ({ progress = [] }) => {
           `<li data-level="${level}"></li>`
         );
       }
-    } else  {
+    } else {
       const squares = document.querySelector(".squares");
       squares.innerHTML = "";
       for (let i = 1; i < 365; i++) {
-
-        squares.insertAdjacentHTML(
-          "beforeend",
-          `<li data-level="${0}"></li>`
-        );
+        squares.insertAdjacentHTML("beforeend", `<li data-level="${0}"></li>`);
       }
     }
   }, [progress, levelsData]);

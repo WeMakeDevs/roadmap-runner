@@ -13,7 +13,7 @@ const Roadmap = () => {
   const [roadmap, setRoadmap] = useState();
   const [completedSections, setCompletedSections] = useState(0);
   const [loading, setLoading] = useState(false);
-  const [progress, setProgress] = useState()
+  const [progress, setProgress] = useState();
 
   useEffect(() => {
     async function fetchRoadmaps() {
@@ -22,7 +22,9 @@ const Roadmap = () => {
         headers: { Authorization: user.accessToken },
       });
       setLoading(false);
-      setProgress(res.data.progress?.completedId ? res.data.progress.completedId : [])
+      setProgress(
+        res.data.progress?.completedId ? res.data.progress.completedId : []
+      );
       setCompletedSections(res.data.completedSections);
       setRoadmap(res.data.roadmap);
     }
@@ -30,8 +32,12 @@ const Roadmap = () => {
     fetchRoadmaps();
   }, [id, user]);
 
-  if(loading) {
-    return <SidebarLayout><Loader /></SidebarLayout>
+  if (loading) {
+    return (
+      <SidebarLayout>
+        <Loader />
+      </SidebarLayout>
+    );
   }
 
   return (
@@ -46,7 +52,12 @@ const Roadmap = () => {
             {roadmap &&
               roadmap.sections &&
               roadmap.sections.map((section) => (
-                <Section key={section._id} section={section} roadmapName={roadmap?.name} progress={progress} />
+                <Section
+                  key={section._id}
+                  section={section}
+                  roadmapName={roadmap?.name}
+                  progress={progress}
+                />
               ))}
           </div>
         </div>

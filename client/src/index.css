@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 
 :root {
-
-  --ff-serif: 'Poppins', sans-serif;
-  --ff-mono: 'Space Mono', monospace;
+  --ff-serif: "Poppins", sans-serif;
+  --ff-mono: "Space Mono", monospace;
 
   /* colors */
 
@@ -108,8 +107,12 @@ select {
   border: 1px solid var(--clr-primary);
   border-radius: 5px;
   padding: 2rem 1rem;
-  background-image: linear-gradient(to right, rgb(var(--content), 0), rgb(var(--content), .1));
-  border: 2px solid rgb(30, 224, 224, .2);
+  background-image: linear-gradient(
+    to right,
+    rgb(var(--content), 0),
+    rgb(var(--content), 0.1)
+  );
+  border: 2px solid rgb(30, 224, 224, 0.2);
 }
 
 button {
@@ -183,13 +186,15 @@ a {
   background-color: gray;
 }
 
-.checkbox-container .form-control[type="checkbox"]:checked~.checkbox-custom,
-.radio-container .form-control[type="radio"]:checked~.radio-custom {
+.checkbox-container .form-control[type="checkbox"]:checked ~ .checkbox-custom,
+.radio-container .form-control[type="radio"]:checked ~ .radio-custom {
   background-color: var(--clr-primary);
 }
 
-.checkbox-container .form-control[type="checkbox"]:checked~.checkbox-custom:after,
-.radio-container .form-control[type="radio"]:checked~.radio-custom:after {
+.checkbox-container
+  .form-control[type="checkbox"]:checked
+  ~ .checkbox-custom:after,
+.radio-container .form-control[type="radio"]:checked ~ .radio-custom:after {
   display: block;
 }
 

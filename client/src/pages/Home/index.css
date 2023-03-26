@@ -1,186 +1,181 @@
 .home-container {
-    display: flex;
-    height: 100%
+  display: flex;
+  height: 100%;
 }
 
 .home-container h1 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-.home-container>div:nth-child(2) {
-    width: 30%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    border-left: 1px solid rgb(163, 168, 195, .2);
-    font-size: 1.25rem;
+.home-container > div:nth-child(2) {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-left: 1px solid rgb(163, 168, 195, 0.2);
+  font-size: 1.25rem;
 }
 
-.home-container>div:nth-child(1) {
-    width: 100%;
+.home-container > div:nth-child(1) {
+  width: 100%;
 }
 
 .home-container .stats-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
-    padding-left: 0;
-    gap: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+  padding-left: 0;
+  gap: 1rem;
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
 .home-container .stats-card .card {
-    padding: 2.5rem 0;
+  padding: 2.5rem 0;
 }
 
 .home-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .home-container .stats-card .card .count {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .home-container .stats-card img {
-    width: 3rem;
+  width: 3rem;
 }
 
-
 :root {
-    --square-size: 15px;
-    --square-gap: 5px;
-    --week-width: calc(var(--square-size) + var(--square-gap));
+  --square-size: 15px;
+  --square-gap: 5px;
+  --week-width: calc(var(--square-size) + var(--square-gap));
 }
 
 .months {
-    grid-area: months;
+  grid-area: months;
 }
 
 .days {
-    grid-area: days;
+  grid-area: days;
 }
 
 .squares {
-    grid-area: squares;
+  grid-area: squares;
 }
 
 .graph {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-
 .graph {
-    display: inline-grid;
-    grid-template-areas: "empty months"
-        "days squares";
-    grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-    max-width: 707px;
-    overflow-x: hidden;
+  display: inline-grid;
+  grid-template-areas:
+    "empty months"
+    "days squares";
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  max-width: 707px;
+  overflow-x: hidden;
 }
 
 .months {
-    display: grid;
-    grid-template-columns: calc(var(--week-width) * 4)
-        /* Jan */
-        calc(var(--week-width) * 4)
-        /* Feb */
-        calc(var(--week-width) * 4)
-        /* Mar */
-        calc(var(--week-width) * 5)
-        /* Apr */
-        calc(var(--week-width) * 4)
-        /* May */
-        calc(var(--week-width) * 4)
-        /* Jun */
-        calc(var(--week-width) * 5)
-        /* Jul */
-        calc(var(--week-width) * 4)
-        /* Aug */
-        calc(var(--week-width) * 4)
-        /* Sep */
-        calc(var(--week-width) * 5)
-        /* Oct */
-        calc(var(--week-width) * 4)
-        /* Nov */
-        calc(var(--week-width) * 5)
-        /* Dec */
-    ;
+  display: grid;
+  grid-template-columns:
+    calc(var(--week-width) * 4)
+    /* Jan */
+    calc(var(--week-width) * 4)
+    /* Feb */
+    calc(var(--week-width) * 4)
+    /* Mar */
+    calc(var(--week-width) * 5)
+    /* Apr */
+    calc(var(--week-width) * 4)
+    /* May */
+    calc(var(--week-width) * 4)
+    /* Jun */
+    calc(var(--week-width) * 5)
+    /* Jul */
+    calc(var(--week-width) * 4)
+    /* Aug */
+    calc(var(--week-width) * 4)
+    /* Sep */
+    calc(var(--week-width) * 5)
+    /* Oct */
+    calc(var(--week-width) * 4)
+    /* Nov */
+    calc(var(--week-width) * 5)
+    /* Dec */;
 }
 
 .days,
 .squares {
-    display: grid;
-    grid-gap: var(--square-gap);
-    grid-template-rows: repeat(7, var(--square-size));
+  display: grid;
+  grid-gap: var(--square-gap);
+  grid-template-rows: repeat(7, var(--square-size));
 }
 
 .squares {
-    grid-auto-flow: column;
-    grid-auto-columns: var(--square-size);
+  grid-auto-flow: column;
+  grid-auto-columns: var(--square-size);
 }
-
 
 /* Other styling */
 
 .days li:nth-child(odd) {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .squares ul {
-    padding: 0;
+  padding: 0;
 }
 
 .squares li {
-    background-color: rgb(76, 29, 149, .1);
-    list-style: none;
-    padding: 0;
+  background-color: rgb(76, 29, 149, 0.1);
+  list-style: none;
+  padding: 0;
 }
 
 .squares li[data-level="1"] {
-    background-color: #ddd6fe;
+  background-color: #ddd6fe;
 }
 
 .squares li[data-level="2"] {
-    background-color: #8b5cf6;
+  background-color: #8b5cf6;
 }
 
 .squares li[data-level="3"] {
-    background-color: #4c1d95;
+  background-color: #4c1d95;
 }
 
 @media (max-width: 1400px) {
-    .home-container>div:nth-child(2) {
-        display: none;
-    }
+  .home-container > div:nth-child(2) {
+    display: none;
+  }
 
-    .graph {
-        max-width: 91%;
-    }
-    
-    .home-container>div:nth-child(1) {
-        max-width: 100%;
-    }
+  .graph {
+    max-width: 91%;
+  }
+
+  .home-container > div:nth-child(1) {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 910px) {
-    .home-container .stats-card {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 0;
-        margin: 2rem 0;
-        gap: 1rem;
-        text-align: center;
-        margin-top: 0.5rem;
-    }
+  .home-container .stats-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    margin: 2rem 0;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
 
-    
-    .graph {
-        overflow-x: scroll;
-    }
- 
-    
+  .graph {
+    overflow-x: scroll;
+  }
 }

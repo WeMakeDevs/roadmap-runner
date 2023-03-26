@@ -30,8 +30,12 @@ const Home = () => {
     fetchHomeStats();
   }, [user]);
 
-  if(loading) {
-    return <SidebarLayout><Loader /></SidebarLayout>
+  if (loading) {
+    return (
+      <SidebarLayout>
+        <Loader />
+      </SidebarLayout>
+    );
   }
 
   return (
@@ -58,7 +62,7 @@ const Home = () => {
           </div>
           <section className="contribution-graph">
             <h2 className="title">Your consistency graph</h2>
-            <ConsistencyGraph progress={stats.progress}/>
+            <ConsistencyGraph progress={stats.progress} />
           </section>
         </div>
         <div className="daily-visit-card">

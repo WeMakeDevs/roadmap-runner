@@ -40,7 +40,7 @@ function getRankImage(rank) {
   }
 }
 
-const Card = ({ rank, name, profileUrl, totalSections=0 }) => {
+const Card = ({ rank, name, profileUrl, totalSections = 0 }) => {
   return (
     <div className="leaderboard-card card">
       <div>

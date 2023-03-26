@@ -48,7 +48,9 @@ const Sidebar = () => {
           <li>
             {/* <i className="fa-solid fa-user"></i> */}
             <img src={SignoutIcon} alt="" />
-            <button onClick={logout}><span>Sign out</span></button>
+            <button onClick={logout}>
+              <span>Sign out</span>
+            </button>
           </li>
         </ul>
       </div>
