@@ -40,7 +40,7 @@ Before starting, you need to install the following on your computer.
 First install the dependencies, and start the server in dev mode:
 Note: cd into the server folder first
 ```
-npm i
+npm ci
 npm run dev
 
 ```
@@ -49,7 +49,7 @@ npm run dev
 First install the dependencies and then start the client:
 Note: first start the server & cd into the client folder
 ```
-npm i
+npm ci
 npm run start
 ```
 
