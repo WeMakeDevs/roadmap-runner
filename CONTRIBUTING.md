@@ -30,11 +30,12 @@ Before starting, you need to install the following on your computer.
 - In the Firebase console, open Settings > Service Accounts.
 - Click **Generate New Private Key**, then confirm by clicking **Generate Key**.
 - Securely store the JSON file containing the key.
-- Rename the JSON file as `serviceAccountKey.json` and paste it in `/server/config/` folder
+- Copy the key value pairs in the above file into .env
 
 ### MongoDB setup:
 - Install MongoDB on your machine by following the instructions provided in the official [MongoDB documentation](https://docs.mongodb.com/manual/installation/).
 - In `/server/.env` store `DB_URL` as `mongodb://localhost:27017/any-db-name`
+- Run `npm run seed` command to seed the database with Roadmaps
 
 ### Server:
 First install the dependencies, and start the server in dev mode:
