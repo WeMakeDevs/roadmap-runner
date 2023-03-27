@@ -1,0 +1,615 @@
+{
+  "name": "Frontend Development",
+  "tagline": "Learn frontend development and take your career to new heights",
+  "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1673668095/roadmaps/frontend_nftugn.png",
+  "description": "This roadmap is designed for those who want to become a frontend developer. It covers everything from understanding the basics of web development and the internet to mastering HTML, CSS, JavaScript, and popular frameworks and libraries like React, Vue, and Angular. You will learn how to create visually appealing and interactive websites and web applications, and gain an understanding of important tools and technologies like version control, package managers, and build tools. With hands-on projects and real-world examples, this roadmap will prepare you for a career in frontend development.",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Introduction",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "What is frontend developer",
+          "resources": [
+            {
+              "id": "1.1.1",
+              "title": "What is a frontend developer? - frontendmasters.com",
+              "url": "https://frontendmasters.com/guides/front-end-handbook/2018/what-is-a-FD.html"
+            },
+            {
+              "id": "1.1.2",
+              "title": "Frontend web developer - Mozilla Developer docs",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer"
+            },
+            {
+              "id": "1.1.3",
+              "title": "What is frontend development - Freecodecamp",
+              "url": "https://www.freecodecamp.org/news/front-end-developer-what-is-front-end-development-explained-in-plain-english/"
+            }
+          ]
+        },
+        {
+          "id": "1.2",
+          "title": "What is frontend web development",
+          "resources": [
+            {
+              "id": "1.2.1",
+              "title": "Frontend Development explained - Mayuko(Youtube)",
+              "url": "https://www.youtube.com/watch?v=qyHyFsT7Hig"
+            },
+            {
+              "id": "1.2.2",
+              "title": "Frontend web development - Wikipedia",
+              "url": "https://en.wikipedia.org/wiki/Front-end_web_development"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Understanding Internet",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "How does internet work",
+          "resources": [
+            {
+              "id": "2.1.1",
+              "title": "Computer Networking course - Kunal Khushwaha(Youtube)",
+              "url": "https://www.youtube.com/watch?v=IPvYjXCsTg8"
+            },
+            {
+              "id": "2.1.2",
+              "title": "How does the Internet Work? - Vox(Youtube)",
+              "url": "https://www.youtube.com/watch?v=yd1JhZzoS6A"
+            },
+            {
+              "id": "2.1.3",
+              "title": "How does the Internet Work? - Mozilla web docs",
+              "url": "https://www.youtube.com/watch?v=TNQsmPf24go"
+            },
+            {
+              "id": "2.1.4",
+              "title": "How Does the Internet Work? - Stanford.edu",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work"
+            },
+            {
+              "id": "2.1.5",
+              "title": "How Does the Internet Work? - cloudflare",
+              "url": "https://www.cloudflare.com/en-in/learning/network-layer/how-does-the-internet-work/"
+            },
+            {
+              "id": "2.1.6",
+              "title": "How Does the Internet Work? - Lesics(Youtube)",
+              "url": "https://www.youtube.com/watch?v=x3c1ih2NJEg"
+            }
+          ]
+        },
+        {
+          "id": "2.2",
+          "title": "Internet-CS50's understanding technology",
+          "resources": [
+            {
+              "id": "2.2.1",
+              "title": "Resource",
+              "url": "https://www.youtube.com/watch?v=n_KghQP86Sw"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Learning HTML",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "HTML Tutorial",
+          "resources": [
+            {
+              "id": "3.1.1",
+              "title": "Learn HTML - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=kUMe1FH4CHE"
+            },
+            {
+              "id": "3.1.2",
+              "title": "Learn HTML - Codecadmeny",
+              "url": "https://www.codecademy.com/learn/learn-html"
+            },
+            {
+              "id": "3.1.3",
+              "title": "HTML Tutorial - W3schools",
+              "url": "https://www.w3schools.com/html/"
+            },
+            {
+              "id": "3.1.4",
+              "title": "HTML Tutorial - TutorialsPoint",
+              "url": "https://www.tutorialspoint.com/html/index.htm"
+            },
+            {
+              "id": "3.1.5",
+              "title": "HTML course, build a website - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=pQN-pnXPaVg"
+            },
+            {
+              "id": "3.1.6",
+              "title": "HTML crash course - Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=UB1O30fR-EE"
+            },
+            {
+              "id": "3.1.7",
+              "title": "HTML Tutorial, making a Website - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=PlxWf493en4"
+            }
+          ]
+        },
+        {
+          "id": "3.2",
+          "title": "Frontend Projects",
+          "resources": [
+            {
+              "id": "3.2.1",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            },
+            {
+              "id": "3.2.1",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Learning CSS",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "CSS Tutorials",
+          "resources": [
+            {
+              "id": "4.1.1",
+              "title": "Learn CSS - web.dev",
+              "url": "https://web.dev/learn/css/"
+            },
+            {
+              "id": "4.1.2",
+              "title": "Learn CSS - codecademy",
+              "url": "https://www.codecademy.com/learn/learn-css"
+            },
+            {
+              "id": "4.1.3",
+              "title": "CSS tutorial -w3schools",
+              "url": "https://www.w3schools.com/css/"
+            },
+            {
+              "id": "4.1.4",
+              "title": "CSS zero to hero - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=1Rs2ND1ryYc"
+            },
+            {
+              "id": "4.1.5",
+              "title": "Kevin Powell(Youtube)",
+              "url": "https://www.youtube.com/kepowob"
+            },
+            {
+              "id": "4.1.6",
+              "title": "Introduction to CSS - Web Dev Simplified",
+              "url": "https://www.youtube.com/playlist?list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si"
+            }
+          ]
+        },
+        {
+          "id": "4.2",
+          "title": "Frontend Projects",
+          "resources": [
+            {
+              "id": "4.2.1",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            },
+            {
+              "id": "4.2.1",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Learning JavaScript",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "CSS Tutorials",
+          "resources": [
+            {
+              "id": "5.1.1",
+              "title": "Learn JavaScript - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=PkZNo7MFNFg"
+            },
+            {
+              "id": "5.1.2",
+              "title": "JavaScript Tutorial - Programming with Mosh(Youtube)",
+              "url": "https://www.youtube.com/watch?v=W6NZfCO5SIk"
+            },
+            {
+              "id": "5.1.3",
+              "title": "JavaScript Programming - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=jS4aFq5-91M"
+            },
+            {
+              "id": "5.1.4",
+              "title": "JavaScript Tutorial - w3schools",
+              "url": "https://www.w3schools.com/js/"
+            },
+            {
+              "id": "5.1.5",
+              "title": "Learn JavaScript - Codecademy",
+              "url": "https://www.codecademy.com/learn/introduction-to-javascript"
+            },
+            {
+              "id": "5.1.6",
+              "title": "Free JS Courses for Beginners - FreeCodeCamp",
+              "url": "https://www.freecodecamp.org/news/learn-javascript-free-js-courses-for-beginners/"
+            },
+            {
+              "id": "5.1.7",
+              "title": "Free JS Practice website to master JS - exercism",
+              "url": "https://exercism.org/"
+            }
+          ]
+        },
+        {
+          "id": "5.2",
+          "title": "Understanding JavaScript",
+          "resources": [
+            {
+              "id": "5.2.1",
+              "title": "NamasteJS/How JS works - Akshay Saini",
+              "url": "https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP"
+            }
+          ]
+        },
+        {
+          "id": "5.3",
+          "title": "Frontend Projects",
+          "resources": [
+            {
+              "id": "5.3.1",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            },
+            {
+              "id": "5.3.1",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Learning Version Control",
+      "subsections": [
+        {
+          "id": "8.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "8.1.1",
+              "title": "Git documentation",
+              "url": "https://git-scm.com/docs/gittutorial"
+            },
+            {
+              "id": "8.1.2",
+              "title": "Git Tutorial",
+              "url": "https://www.youtube.com/watch?v=apGV9Kg7ics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Understanding Package Managers",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "9.1.1",
+              "title": "What is NPM & why do we need it?",
+              "url": "https://www.youtube.com/watch?v=P3aKRdUyr0s"
+            },
+            {
+              "id": "9.1.2",
+              "title": "NPM crash course",
+              "url": "https://www.youtube.com/watch?v=jHDhaSSKmB0"
+            },
+            {
+              "id": "9.1.3",
+              "title": "Yarn package manager crash course",
+              "url": "https://www.youtube.com/watch?v=g9_6KmiBISk"
+            },
+            {
+              "id": "9.1.4",
+              "title": "Learn Package Manager",
+              "url": "https://frontendmasters.com/guides/front-end-handbook/2018/learning/package-manager.html"
+            },
+            {
+              "id": "9.1.5",
+              "title": "Javascript Package manager",
+              "url": "https://www.freecodecamp.org/news/javascript-package-manager-npm-and-yarn/"
+            },
+            {
+              "id": "9.1.6",
+              "title": "Package management basics",
+              "url": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Package_management"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Learn Build Tools",
+      "subsections": [
+        {
+          "id": "10.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "10.1.1",
+              "title": "What are build tools?",
+              "url": "https://www.youtube.com/watch?v=V5qvWl-O-zE"
+            },
+            {
+              "id": "10.1.2",
+              "title": "6 best build tools",
+              "url": "https://www.developerdrive.com/best-build-tools-frontend-development/"
+            },
+            {
+              "id": "10.1.3",
+              "title": "Learn build tools?",
+              "url": "https://www.codecademy.com/learn/learn-build-tools"
+            },
+            {
+              "id": "10.1.4",
+              "title": "Freecodecamp",
+              "url": "https://www.freecodecamp.org/news/making-sense-of-front-end-build-tools-3a1b3a87043b/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Learn Build ToolsLet's pick a framework/library for you",
+      "subsections": [
+        {
+          "id": "11.1",
+          "title": "Introduction",
+          "resources": [
+            {
+              "id": "10.1.1",
+              "title": "Frameworks-Web Development",
+              "url": "https://www.youtube.com/watch?v=W6KCPXl6Zuc"
+            }
+          ]
+        },
+        {
+          "id": "11.2",
+          "title": "React",
+          "resources": [
+            {
+              "id": "11.2.1",
+              "title": "Tutorial",
+              "url": "https://www.youtube.com/watch?v=bMknfKXIFA8"
+            },
+            {
+              "id": "11.2.1",
+              "title": "Docs",
+              "url": "https://reactjs.org/"
+            }
+          ]
+        },
+        {
+          "id": "11.3",
+          "title": "Vue JS",
+          "resources": [
+            {
+              "id": "11.3.1",
+              "title": "Tutorial",
+              "url": "https://www.youtube.com/watch?v=FXpIoQ_rT_c"
+            },
+            {
+              "id": "11.3.1",
+              "title": "Docs",
+              "url": "https://vuejs.org/tutorial/#step-1"
+            }
+          ]
+        },
+        {
+          "id": "11.4",
+          "title": "Angular",
+          "resources": [
+            {
+              "id": "11.4.1",
+              "title": "Angular Tutorial - Programming with Mosh(Youtube)",
+              "url": "https://www.youtube.com/watch?v=k5E2AVpwsko"
+            },
+            {
+              "id": "11.4.2",
+              "title": "Learn Angular - FreeCodeCamp(Youtube)",
+              "url": "https://www.youtube.com/watch?v=2OHbjep_WjQ"
+            },
+            {
+              "id": "11.4.3",
+              "title": "Docs",
+              "url": "https://angular.io/docs"
+            }
+          ]
+        },
+        {
+          "id": "11.5",
+          "title": "Frontend Projects",
+          "resources": [
+            {
+              "id": "11.5.1",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            },
+            {
+              "id": "11.5.2",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "CSS Frameworks",
+      "subsections": [
+        {
+          "id": "12.1",
+          "title": "Introduction",
+          "resources": [
+            {
+              "id": "12.1.1",
+              "title": "Top CSS Frameworks",
+              "url": "https://www.browserstack.com/guide/top-css-frameworks"
+            },
+            {
+              "id": "12.1.2",
+              "title": "Tailwind vs MUI vs Bootstrap vs Chakra vs...",
+              "url": "https://www.youtube.com/watch?v=CQuTF-bkOgc"
+            }
+          ]
+        },
+        {
+          "id": "12.2",
+          "title": "Bootstrap",
+          "resources": [
+            {
+              "id": "12.2.1",
+              "title": "Tutorial",
+              "url": "https://www.youtube.com/watch?v=-qfEOE4vtxE"
+            },
+            {
+              "id": "12.2.2",
+              "title": "Docs",
+              "url": "https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+            }
+          ]
+        },
+        {
+          "id": "12.3",
+          "title": "Chakra UI",
+          "resources": [
+            {
+              "id": "12.3.1",
+              "title": "Tutorial 1 - Chakra UI for beginners",
+              "url": "https://www.chakrauiforbeginners.com/play"
+            },
+            {
+              "id": "12.3.2",
+              "title": "Tutorial 2 - Build check out page with chakra UI",
+              "url": "https://egghead.io/lessons/react-install-and-setup-chakra-ui-in-a-react-project"
+            },
+            {
+              "id": "12.3.2",
+              "title": "Docs",
+              "url": "https://chakra-ui.com/getting-started"
+            }
+          ]
+        },
+        {
+          "id": "12.4",
+          "title": "Tailwind CSS",
+          "resources": [
+            {
+              "id": "12.4.1",
+              "title": "Tailwind css crash course - Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=UBOj6rqRUME"
+            },
+            {
+              "id": "12.4.2",
+              "title": "Tailwind crash course - Traversy Media(Youtube)",
+              "url": "https://www.youtube.com/watch?v=dFgzHOX84xQ"
+            },
+            {
+              "id": "12.4.3",
+              "title": "Docs",
+              "url": "https://tailwindcss.com/docs/installation"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "What is PWA(Progressive Web Apps)",
+      "subsections": [
+        {
+          "id": "13.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "13.1.1",
+              "title": "PWA tutorial - The Net Ninja(Youtube)",
+              "url": "https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7"
+            },
+            {
+              "id": "13.1.2",
+              "title": "Progressive web apps - Mozilla developer docs",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"
+            },
+            {
+              "id": "13.1.3",
+              "title": "What are progressive web apps? - Freecodecamp",
+              "url": "https://www.freecodecamp.org/news/what-are-progressive-web-apps/"
+            },
+            {
+              "id": "13.1.4",
+              "title": "Progressive Web Apps",
+              "url": "https://web.dev/progressive-web-apps/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Sample projects for practice",
+      "subsections": [
+        {
+          "id": "14.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "14.1.1",
+              "title": "frontendmentor.io",
+              "url": "https://www.frontendmentor.io/"
+            },
+            {
+              "id": "14.1.2",
+              "title": "frontendpractice.com",
+              "url": "https://www.frontendpractice.com/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
