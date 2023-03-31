@@ -11,12 +11,11 @@
 + Our app was designed to address these difficulties by providing expert-created roadmaps, progress tracking, consistency analysis, a leaderboard feature, and social sharing capabilities. 
 + With Roadmap Runner, we aim to make the learning process more manageable, efficient, and effective, helping individuals achieve their software development learning goals.
 
-## 🔗 Link
-**Check out [Roadmap Runner]() now!**
+### Check out [Roadmap Runner](https://roadmaprunner.vercel.app/) now!
 
 ## **☀️ Description**
 
-**Roadmap Runner is an app that simplifies the process of learning software development.** Our app offers a range of features designed to make the learning process more **manageable, efficient, and effective.** <br>
+**Roadmap Runner is an app that simplifies the process of learning software development.** Our app offers a range of features designed to make the learning process  more **manageable, efficient, and effective.** <br>
 #### Some of these features include:
 
 - Expert-created roadmaps for various fields of software development
@@ -25,7 +24,7 @@
 - Leaderboard feature: users can stay motivated through the leaderboard feature, which allows them to see how they are doing compared to other users.
 - Social sharing: users can share their progress on Twitter, making it easy to stay accountable and stay connected with other learners.
 
-**With all these features, Roadmap Runner is a comprehensive solution for anyone looking to learn software development in an efficient and effective way.**
+>**Roadmap Runner is a comprehensive solution for anyone looking to learn software development in an efficient and effective way.**
 
 ## ✨ Features 
 ### 👉 Explore Roadmaps
@@ -46,15 +45,15 @@
 ### 👉 Proudly share your progress
 ![shareprogress](https://user-images.githubusercontent.com/80971056/212525920-e68493da-88b8-4b7f-b9ed-fc62e5599a60.gif)
 
+# 🤝 Contributing
+
+**We welcome contributions in our community.**<br>
+See the [**`Contributing.md`**](https://github.com/siddhigate/roadmap-runner/blob/main/CONTRIBUTING.md) for ways to get started.
 
 # ☮️ Code of Conduct
 
 Check out the [**`Code of Conduct`**](https://github.com/siddhigate/roadmap-runner/blob/main/CODE_OF_CONDUCT.md) to know an inclusive environment that respects all contributions.
 
-# 🤝 Contributing
-
-**We welcome contributions in our community.**<br>
-See the [**`Contributing.md`**](https://github.com/siddhigate/roadmap-runner/blob/main/CONTRIBUTING.md) for ways to get started.
 
 # 🙌 Contributors
 <a href="https://github.com/WeMakeDevs/roadmap-runner/graphs/contributors">
