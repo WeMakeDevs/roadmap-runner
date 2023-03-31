@@ -1,4 +1,5 @@
 <div align="center">
+<img src="https://github.com/WeMakeDevs/roadmap-runner/blob/main/client/public/logo192.png?raw=true" alt="logo.png" width="120px">
 <h1>Roadmap Runner 🚀</h1>
 <h3><em>Navigating the path to success, one roadmap at a time!</em></h3>
 <p><img src="https://user-images.githubusercontent.com/80971056/212525715-2b72261a-fbda-443b-b04f-29fa3269b32e.gif" alt="landingroadmap"></p>
