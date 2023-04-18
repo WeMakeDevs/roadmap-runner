@@ -1,0 +1,602 @@
+{
+  "name": "Blockchain",
+  "sections": [
+    {
+      "id": "1",
+      "title": "Introduction",
+      "subsections": [
+        {
+          "id": "1.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "1.1.1",
+              "title": "What is Web3",
+              "url": "https://www.freecodecamp.org/news/what-is-web3/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Blockchain Fundamentals",
+      "subsections": [
+        {
+          "id": "2.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "2.1.1",
+              "title": "What is Blockchain",
+              "url": "https://www.geeksforgeeks.org/blockchain-technology-introduction"
+            },
+            {
+              "id": "2.1.2",
+              "title": "Distributed Ledger",
+              "url": "https://www.geeksforgeeks.org/what-is-blockchain-distributed-ledger"
+            },
+            {
+              "id": "2.1.3",
+              "title": "Crypto Basics",
+              "url": "https://www.oswego.edu/cts/basics-about-cryptocurrency"
+            },
+            {
+              "id": "2.1.4",
+              "title": "Difference between Web1,Web2,Web3",
+              "url": "https://www.simplilearn.com/what-is-web-1-0-web-2-0-and-web-3-0-with-their-difference-article"
+            },
+            {
+              "id": "2.1.5",
+              "title": "Smart Contracts",
+              "url": "https://ethereum.org/en/developers/docs/smart-contracts/"
+            },
+			{
+				"id": "2.1.6",
+				"title": "Crypto Wallet",
+				"url": "https://www.businessinsider.com/personal-finance/crypto-wallet"
+			},
+			{
+				"id": "2.1.7",
+				"title": "Block Explorers",
+				"url": "https://www.gemini.com/cryptopedia/what-is-a-block-explorer-btc-bch-eth-ltc"
+			},
+			{
+				"id": "2.1.8",
+				"title": "Blockchain Layer 1 vs.Layer 2 Scaling Solutions",
+				"url": "https://www.gemini.com/cryptopedia/blockchain-layer-2-network-layer-1-network"
+			},
+			{
+				"id": "2.1.9",
+				"title": "Oracles",
+				"url": "https://chain.link/education/blockchain-oracles"
+			},
+			{
+				"id": "2.1.10",
+				"title": "What Are NFTs",
+				"url": "https://www.forbes.com/advisor/investing/cryptocurrency/nft-non-fungible-token/"
+			},
+			{
+				"id": "2.1.11",
+				"title": "What Is A DAO",
+				"url": "https://www.forbes.com/sites/cathyhackl/2021/06/01/what-are-daos-and-why-you-should-pay-attention/?sh=343b04067305"
+			},
+			{
+				"id": "2.1.12",
+				"title": "Intro To DAPPS",
+				"url": "https://ethereum.org/en/developers/docs/dapps/"
+			},
+			{
+				"id": "2.1.13",
+				"title": "EVM and Non-EVM Chains",
+				"url": "https://ethereum.org/en/developers/docs/dapps/"
+			},
+			{
+				"id": "2.1.14",
+				"title": "Overview of technologies include in Web3",
+				"url": "https://remote3.co/blog-post/complete-web3-developer-roadmap-2022"
+			},
+			{
+				"id": "2.1.15",
+				"title": "Road to Web3",
+				"url": "https://www.web3.university/tracks/road-to-web3"
+			},
+			{
+				"id": "2.1.16",
+				"title": "One of the best Web3 Roadmap",
+				"url": "https://vitto.cc/web3-and-solidity-smart-contracts-development-roadmap/"
+			}
+          ]
+        },
+		{
+			"id": "2.2",
+			"title": "Choose A Blockchain",
+			"resources":[
+				{
+				"id": "2.2.1",
+				"title": "Ethereum",
+				"url": "https://ethereum.org/"
+				},
+				{
+				"id": "2.2.2",
+				"title": "Solana",
+				"url": "https://solana.com/"
+				}
+			]
+		},
+		{
+			"id": "2.3",
+			"title": "Ethereum Concepts",
+			"resources": [
+				{
+					"id": "2.3.1",
+					"title": "Accounts",
+					"url": "https://ethereum.org/en/developers/docs/accounts/"
+				},
+				{
+					"id": "2.3.2",
+					"title": "Transactions",
+					"url": "https://ethereum.org/en/developers/docs/transactions"
+				},
+				{
+					"id": "2.3.3",
+					"title": "Consensus",
+					"resources": [
+						{
+							"id": "2.3.3.1",
+							"title": "1) Proof Of Work",
+							"url": "https://www.investopedia.com/terms/p/proof-work.asp"
+						},
+						{
+							"id": "2.3.3.2",
+							"title": "2) Proof Of Stake",
+							"url": "https://www.investopedia.com/terms/p/proof-stake-pos.asp"
+						},
+						{
+							"id": "2.3.3.3",
+							"title": "3) Proof Of History",
+							"url": "https://medium.com/solana-labs/proof-of-history-a-clock-for-blockchain-cf47a61a9274"
+						}
+					]
+				},
+				{
+					"id": "2.3.4",
+					"title": "Ethereum Virtual Machine",
+					"url": "https://ethereum.org/en/developers/docs/evm/"
+				},
+				{
+					"id": "2.3.5",
+					"title": "Gas",
+					"url": "https://ethereum.org/en/developers/docs/gas/"
+				},
+				{
+					"id": "2.3.6",
+					"title": "Advanced Concepts (Optional):",
+					"resources": [
+						{
+							"id": "2.3.6.1",
+							"title": "1) Ethereum Whitepaper",
+							"url": "https://ethereum.org/en/whitepaper/"
+						},
+						{
+							"id": "2.3.6.2",
+							"title": "2) Blockchain Trilemma",
+							"url": "https://www.gemini.com/cryptopedia/blockchain-trilemma-decentralization-scalability-definition"
+						},
+						{
+							"id": "2.3.6.3",
+							"title": "3) Ethereum Trilemma",
+							"url": "https://ethereum.org/en/upgrades/vision"
+						},
+						{
+							"id": "2.3.6.4",
+							"title": "4) Endgame",
+							"url": "https://vitalik.ca/general/2021/12/06/endgame.html"
+						}
+					]
+				},
+				{
+					"id": "2.3.7",
+					"title": "Nodes And Clients",
+					"url": "https://ethereum.org/en/developers/docs/nodes-and-clients/"
+				},
+				{
+					"id": "2.3.8",
+					"title": "Networks, Nodes as a Service",
+					"url": "https://ethereum.org/en/developers/docs/networks",
+					"resources": [
+						{
+							"id": "2.3.8.1",
+							"title": "1) Alchemy",
+							"url": "https://www.alchemy.com/"
+						},
+						{
+							"id": "2.3.8.2",
+							"title": "2) Infura",
+							"url": "https://infura.io/"
+						},
+						{
+							"id": "2.3.8.3",
+							"title": "3) Quicknode",
+							"url": "https://www.quicknode.com/"
+						}
+					]
+				}
+			]
+		}
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Layer 2 Solutions",
+      "subsections": [
+        {
+          "id": "3.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "3.1.1",
+              "title": "Polygon",
+              "url": "https://wiki.polygon.technology/"
+            },
+            {
+              "id": "3.1.2",
+              "title": "Lightning Network",
+              "url": "http://lightning.network/docs/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Choose A Language",
+      "subsections": [
+        {
+          "id": "4.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "4.1.1",
+              "title": "Solidity",
+              "url": "https://docs.soliditylang.org/"
+            },
+            {
+              "id": "4.1.2",
+              "title": "Vypers",
+              "url": "https://vyper.readthedocs.io/en/stable/"
+            },
+			{
+              "id": "4.1.3",
+              "title": "Rust(Solana)",
+              "url": "https://docs.solana.com/developing/on-chain-programs/developing-rust"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Solidity",
+      "subsections": [
+        {
+          "id": "5.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "5.1.1",
+              "title": "Remix IDE",
+              "url": "https://remix-project.org/"
+            },
+            {
+              "id": "5.1.2",
+              "title": "Solidity Tutorials :",
+              "resources": [
+				  {
+					"id": "5.1.2.1",
+					"title": "1) Solidity With Javascript 31 hours Course",
+					"url": "https://youtu.be/gyMwXuJrbJQ"
+				  },
+				  {
+					"id": "5.1.2.2",
+					"title": "2) Solidity With Javascript 10 hours Course",
+					"url": "https://youtu.be/gyMwXuJrbJQ"
+				  },
+				  {
+					"id": "5.1.2.3",
+					"title": "3) Solidity Tutorial",
+					"url": "https://youtu.be/3g2WT2jms_k"
+				  }
+				  {
+					"id": "5.1.2.4",
+					"title": "4) Solidity Docs",
+					"url": "https://docs.soliditylang.org/en/v0.8.16/"
+				  },
+				  {
+					"id": "5.1.2.5",
+					"title": "5) Solidity Cheatsheet",
+					"url": "https://intellipaat.com/mediaFiles/2019/03/Solidity-Cheat-Sheet.jpg"
+				  },
+				  {
+					"id": "5.1.2.6",
+					"title": "6) CryptoZombies",
+					"url": "https://cryptozombies.io/"
+				  }
+			  ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Use A FrameWork",
+      "subsections": [
+        {
+          "id": "6.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "6.1.1",
+              "title": "Metamask",
+              "url": "https://piazza.com/class_profile/get_resource/ktlu0ly5db84bb/kuz3w4v5gpn4zh"
+            },
+            {
+              "id": "6.1.2",
+              "title": "VS Code Solidity Extension",
+              "url": "https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity"
+            },
+            {
+              "id": "6.1.3",
+              "title": "Truffle",
+              "url": "https://trufflesuite.com/"
+            },
+            {
+              "id": "6.1.4",
+              "title": "Hardhat",
+              "url": "https://hardhat.org/docs"
+            },
+            {
+              "id": "6.1.5",
+              "title": "Foundry",
+              "url": "https://getfoundry.sh/"
+            },
+			{
+              "id": "6.1.6",
+              "title": "Web3.py",
+              "url": "https://web3py.readthedocs.io/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Connect Dapp to Frontend",
+      "subsections": [
+        {
+          "id": "7.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "7.1.1",
+              "title": "Web3.js",
+              "url": "https://web3js.readthedocs.io/en/v1.7.5/"
+            },
+            {
+              "id": "7.1.2",
+              "title": "Ether.js",
+              "url": "https://docs.ethers.io/v5/"
+            },
+            {
+              "id": "7.1.3",
+              "title": "Decentralised Storage",
+              "resources": [
+			  {
+				"id": "7.1.3.1",
+				"title": "1) IPFS",
+				"url": "https://docs.ipfs.tech/install/"
+			  },
+			  {
+				"id": "7.1.3.2",
+				"title": "2) Arweave",
+				"url": "https://docs.arweave.org/info/"
+			  },
+			  {
+				"id": "7.1.3.3",
+				"title": "3) Filecoin",
+				"url": "https://docs.filecoin.io/"
+			  }
+			]
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Mid-Level Tools",
+      "subsections": [
+        {
+          "id": "8.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "8.1.1",
+              "title": "Testing Tools",
+              "resources": [
+				{
+					"id": "8.1.1.1",
+					"title": "1) Waffle",
+					"url": "https://ethereum-waffle.readthedocs.io/en/latest/"
+				},
+				{
+					"id": "8.1.1.2",
+					"title": "2) Ganache",
+					"url": "https://trufflesuite.com/docs/ganache/"
+				}
+			  ]
+            },
+            {
+              "id": "8.1.2",
+              "title": "Open Zeppelin",
+              "url": "https://www.youtube.com/watch?v=Btli00YA1eI"
+            },
+			{
+              "id": "8.1.3",
+              "title": "Wallet Connect",
+              "url": "https://docs.walletconnect.com/2.0/"
+            },
+			{
+              "id": "8.1.4",
+              "title": "Chain Link",
+              "url": "https://docs.chain.link/"
+            },
+			{
+              "id": "8.1.5",
+              "title": "Ceramic Network",
+              "url": "https://developers.ceramic.network/learn/welcome/"
+            },
+			{
+              "id": "8.1.6",
+              "title": "The Graph",
+              "url": "https://thegraph.com/docs/en/"
+            },
+			{
+              "id": "8.1.7",
+              "title": "Scaffold-Ethereum",
+              "url": "https://www.youtube.com/watch?v=JuBpWzEoDw4"
+            },
+			{
+              "id": "8.1.8",
+              "title": "Alchemy Dapp Store",
+              "url": "https://www.alchemy.com/dapps"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "SDKs",
+      "subsections": [
+        {
+          "id": "9.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "9.1.1",
+              "title": "Third Web",
+              "url": "https://portal.thirdweb.com/"
+            },
+            {
+              "id": "9.1.2",
+              "title": "Moralis",
+              "url": "https://docs.moralis.io/moralis-dapp/getting-started"
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "id": "10",
+      "title": "Project Ideas",
+      "subsections": [
+        {
+          "id": "10.1",
+          "title": "",
+          "resources": [
+            {
+              "id": "10.1.1",
+              "title": "Article Format",
+              "resources": [
+				{
+					"id": "10.1.1.1",
+					"title": "The Complete Guide to Full Stack Web3 Development",
+					"url": "https://dev.to/edge-and-node/the-complete-guide-to-full-stack-web3-development-4g74"
+				},
+				{
+					"id": "10.1.1.2",
+					"title": "The Complete Guide to Full Stack Ethereum and EVM Development",
+					"url": "https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13"
+				},
+				
+					"id": "10.1.1.3",
+					"title": "Blocktrain.info",
+					"url": "https://www.blocktrain.info/project"
+				},
+				{
+					"id": "10.1.1.4",
+					"title": "Buildspace- Modern Web3 projects",
+					"url": "https://buildspace.so/builds"
+				},
+				
+					"id": "10.1.1.5",
+					"title": "Build this Apps & EARN",
+					"url": "https://www.pointer.gg/tutorials"
+				},
+				{
+					"id": "10.1.1.6",
+					"title": "80+ Web3 Dapps",
+					"url": "https://www.theinsaneapp.com/2022/05/best-web3-projects.html"
+				}
+			  ]
+            },
+            {
+              "id": "10.1.2",
+              "title": "Video Format",
+              "resources": [
+				{
+					"id": "10.1.2.1",
+					"title": "Moralis Web3 (Youtube)",
+					"url": "https://www.youtube.com/c/MoralisWeb3"
+				},
+				{
+					"id": "10.1.2.2",
+					"title": "Alchemy (Youtube)",
+					"url": "https://www.youtube.com/c/AlchemyPlatform"
+				},
+				
+					"id": "10.1.2.3",
+					"title": "Dapp University(Youtube)",
+					"url": "https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ"
+				},
+				{
+					"id": "10.1.2.4",
+					"title": "Patrick Collins(Youtube)",
+					"url": "https://www.youtube.com/c/patrickcollins"
+				},
+				{
+					"id": "10.1.2.5",
+					"title": [
+						{
+							"text": "EatTheBlocks(Youtube)",
+							"url": "https://www.youtube.com/@EatTheBlocks"
+						},
+						{
+							"text": "(Defi Tutorial)"
+							"url": "https://youtu.be/z9FgWvUai28"
+						}
+					]
+				},
+				{
+					"id": "10.1.2.6",
+					"title": "Austin Griffith",
+					"url": "https://www.youtube.com/channel/UC_HI2i2peo1A-STdG22GFsA"
+				}
+				{
+					"id": "10.1.2.7",
+					"title": "Nader Dabit",
+					"url": "https://www.youtube.com/user/boyindasouth"
+				},
+				{
+					"id": "10.1.2.8",
+					"title": "Harkirat Singh (Youtube)",
+					"url": "https://www.youtube.com/playlist?list=PLVKLWop9wWA82pZoyylZD2VF2c7MR8_5I"
+				}
+			  ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
