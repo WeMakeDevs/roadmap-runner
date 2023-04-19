@@ -568,11 +568,13 @@
 					"id": "10.1.2.5",
 					"title": [
 						{
+							"id": "10.1.2.5.1",
 							"text": "EatTheBlocks(Youtube)",
 							"url": "https://www.youtube.com/@EatTheBlocks"
 						},
 						{
-							"text": "(Defi Tutorial)"
+							"id": "10.1.2.5.2",
+							"text": "(Defi Tutorial)",
 							"url": "https://youtu.be/z9FgWvUai28"
 						}
 					]
