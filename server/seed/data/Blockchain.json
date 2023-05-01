@@ -1,5 +1,8 @@
 {
   "name": "Blockchain",
+  "tagline": "Comprehensive Guide to Blockchain Development",
+  "bannerImage": "https://res.cloudinary.com/dqkl3iifo/image/upload/v1682938399/roadmaps/blockchain-roadmap_j7vyrz.jpg",
+  "description": "Discover the world of Web3 with our comprehensive guide to blockchain development. Learn fundamentals like distributed ledgers, crypto wallets, and smart contracts. Choose your blockchain, master Solidity programming, and connect your Dapp to the frontend. Explore layer 2 scaling solutions, and the vast ecosystem of tools and SDKs available to Web3 developers. With project ideas and video tutorials from leading experts, our guide equips you to build decentralized applications today.",
   "sections": [
     {
       "id": "1",
