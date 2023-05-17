@@ -5,7 +5,7 @@ const Card = ({ bannerImage, id, title, tagline }) => {
   return (
     <Link to={`/roadmaps/${id}`}>
       <section className="roadmap-card">
-        <img src={bannerImage} alt="" />
+        <img src={bannerImage} alt={title} />
         <h2>{title}</h2>
         <p>{tagline}</p>
       </section>
