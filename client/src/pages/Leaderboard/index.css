@@ -4,11 +4,20 @@
 }
 
 .leaderboard-container .stats {
-  width: 30%;
+  width: 25%;
+  position: fixed;
+  right: 0;
+  top: 85px;
+  height: 85%;
   padding: 6rem 2rem 0 2rem;
   font-family: var(--ff-mono);
   border-left: 1px solid rgb(163, 168, 195, 0.2);
   text-align: center;
+}
+
+.leaderboard-container .stats-icon {
+  block-size: auto;
+  max-inline-size: 88%;
 }
 
 .leaderboard-container .stats-title {

@@ -55,7 +55,7 @@ const Leaderboard = () => {
         </div>
         <div className="stats">
           <div>
-            <img src={Users} alt="" />
+            <img className="stats-icon" src={Users} alt="" />
             <p className="stats-title">Total Learners</p>
             <p className="stats-count">{totalLearners}</p>
           </div>
