@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className="primary-nav">
       <div>
-        <img src={Logo} alt="Roadmap Runner logo" />
+        <Link to="/"><img src={Logo} alt="Homepage" /></Link>
         <div>RoadmapRunner</div>
       </div>
     </nav>
