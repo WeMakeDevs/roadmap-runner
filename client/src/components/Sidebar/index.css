@@ -2,6 +2,8 @@
   padding: 1rem;
   position: relative;
   height: calc(100vh - 3.5rem);
+  display: flex;
+  justify-content: center;
 }
 
 .sidebar ul {
@@ -49,6 +51,7 @@
 }
 
 @media (max-width: 1170px) {
+
   .sidebar li span {
     display: none;
   }
